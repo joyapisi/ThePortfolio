@@ -115,7 +115,7 @@ header {
 }
 
 .mobilemain {
-  display:flex;
+  display: flex;
   flex-direction: column;
   position: relative;
   width: 375px;
