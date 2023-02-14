@@ -4,7 +4,7 @@
   scroll-behavior: smooth;
 }
 
-nav {
+header {
   background-color: #fff;
   padding: 0;
   display: flex;
@@ -185,6 +185,11 @@ h1 {
   font-size: 16px;
   line-height: 24px;
   color: hsl(234, 100%, 75%);
+  text-decoration: none;
+}
+
+#heading5:hover {
+  text-decoration: underline; 
 }
 
 .topicons {
