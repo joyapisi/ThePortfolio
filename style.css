@@ -13,15 +13,6 @@ header {
   width: 100%;
 }
 
-.nav-button1 {
-  align-items: center;
-  padding: 10px 12px;
-  border: none;
-  width: 30%;
-  height: auto;
-  background-color: transparent;
-}
-
 .logo {
   width: 40%;
   height: auto;
@@ -33,6 +24,14 @@ header {
   align-items: center;
   text-align: center;
   color: #6171ff;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px 12px;
+  border: none;
+  margin-left: 1%;
+  width: 30%;
+  height: auto;
+  background-color: transparent;
 }
 
 .ul-nav {
@@ -171,7 +170,7 @@ h1 {
   top: 368px;
 }
 
-#heading5 {
+.LetsConnect {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,7 +189,7 @@ h1 {
   text-decoration: none;
 }
 
-#heading5:hover {
+.LetsConnect:hover {
   text-decoration: underline;
 }
 
