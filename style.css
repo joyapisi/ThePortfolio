@@ -534,9 +534,11 @@ h2 {
   display: grid;
   grid-column: 1fr 1fr;
   align-items: center;
+  margin-left: 0;
   padding: 114px 24px;
   gap: 24px;
   width: 375px;
+  left: 0;
   height: 1126.15px;
   background-image: url('./sources/Base\ about\ my\ self.png');
   background-repeat: none;
@@ -894,8 +896,5 @@ h2 {
   left: 6%;
 }
 
-@media screen and (min-device-width: 768px) {
-  header {
-    background-color: #fff;
-  }
-}
+/* Page 7 */
+
