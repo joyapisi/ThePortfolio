@@ -902,9 +902,10 @@ h2 {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #6070ff;
-  border-top-left-radius: 5rem;
+  background-image: url('./sources/contact\ form\ shapes-mobile@2x.png'), url('./sources/Contact\ me.png');
   background-repeat: no-repeat;
+  background-position: right;
+  margin-top: -10px;
 }
 
 .contact-me {
