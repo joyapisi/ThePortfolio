@@ -119,6 +119,7 @@ header {
   overflow-x: hidden;
   top: 0;
 }
+
 h1 {
   animation-duration: 2s;
   animation-name: ease;
@@ -132,11 +133,6 @@ h1 {
   to {
     margin-right: 20%;
   }
-}
-
-h1 {
-  animation-duration: 2s;
-  animation-name: ease;
 }
 
 .headline {
