@@ -39,7 +39,7 @@ nav {
   background-color: transparent;
 }
 
-.ul-nav {
+.navigationList {
   flex-direction: column;
   position: absolute;
   gap: 6%;
@@ -56,7 +56,7 @@ nav {
   backdrop-filter: blur(12px);
 }
 
-.navigationList {
+.navigationItem {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -67,7 +67,7 @@ nav {
   color: #fff;
 }
 
-.ul-nav.active {
+.navigationList.active {
   display: flex;
   position: fixed;
   transform: translateY(0);

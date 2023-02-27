@@ -48,7 +48,8 @@ Use images and backgrounds to enhance the look of your website.
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Coming soon]
+Click here to see a live demo of this project online: <li><a href="https://joyapisi.github.io/ThePortfolio/">Live Demo</a></li>
+
 
 <!-- GETTING STARTED -->
 
