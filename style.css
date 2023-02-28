@@ -140,7 +140,8 @@ nav {
   width: 375px;
   height: 604px;
   left: calc(50% - 375px / 2);
-  background-image: url("./sources/header-shapes\ mobile.png"), url("./sources/header-background-mobile\ \(1\).png");
+  background-image: url("./sources/header-shapes\ mobile.png"),
+    url("./sources/header-background-mobile\ \(1\).png");
   background-repeat: no-repeat;
 }
 
@@ -431,7 +432,7 @@ h2 {
 .normalbutton {
   width: 124px;
   height: 48px;
-  color: #396df2;
+  color: #2e5dd3;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -439,7 +440,7 @@ h2 {
   padding: 12px;
   gap: 10px;
   position: absolute;
-  border: 1px solid #6070ff;
+  border: 1px solid #5361dc;
   border-radius: 8px;
   margin-top: 64%;
   cursor: pointer;
@@ -543,7 +544,7 @@ h2 {
   width: 375px;
   left: 0;
   height: 1126.15px;
-  background-image: url('./sources/Base\ about\ my\ self.png');
+  background-image: url("./sources/Base\ about\ my\ self.png");
   background-repeat: none;
 }
 
@@ -903,7 +904,7 @@ h2 {
   height: auto;
   background-color: #6070ff;
   border-top-left-radius: 5rem;
-  background-image: url('./sources/contact\ form\ shapes-mobile@2x.png');
+  background-image: url("./sources/contact\ form\ shapes-mobile@2x.png");
   background-repeat: no-repeat;
   background-position: right;
 
@@ -2046,8 +2047,7 @@ h2 {
   }
 
   .contact-form {
-    background-image:
-      url("./sources/contact\ form\ background\ shapes.png"),
+    background-image: url("./sources/contact\ form\ background\ shapes.png"),
       url("./sources/contactmedesktop.png");
     width: 100%;
     height: 750px;
