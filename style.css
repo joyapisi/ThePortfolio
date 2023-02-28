@@ -140,7 +140,8 @@ nav {
   width: 375px;
   height: 604px;
   left: calc(50% - 375px / 2);
-  background-image: url("./sources/header-shapes\ mobile.png"),
+  background-image: 
+    url("./sources/header-shapes\ mobile.png"),
     url("./sources/header-background-mobile\ \(1\).png");
   background-repeat: no-repeat;
 }
@@ -2062,7 +2063,8 @@ h2 {
   }
 
   .contact-form {
-    background-image: url("./sources/contact\ form\ background\ shapes.png"),
+    background-image: 
+      url("./sources/contact\ form\ background\ shapes.png"),
       url("./sources/contactmedesktop.png");
     width: 100%;
     height: 750px;
