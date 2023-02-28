@@ -1664,10 +1664,6 @@ h2 {
     color: #000;
   }
 
-  nav ul li {
-    /* margin-left: 10%; */
-  }
-
   .navigationList {
     display: flex;
     flex-direction: row;
