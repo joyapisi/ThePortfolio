@@ -1,5 +1,5 @@
 # Portfolio
-Portfolio setup and Mobile First. Day 3 Microverse Project
+Portfolio setup, Mobile First and DOM Manipulation
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -21,8 +21,7 @@ Portfolio setup and Mobile First. Day 3 Microverse Project
 # 📖 [Portfolio] <a name="Portfolio"></a>
 
 
-**[Portfolio]** is a simple HTML and CSS project that teaches how to parse a Figma design to create a UI, use Flexbox to place elements in the page, Build a personal portfolio site and
-Use images and backgrounds to enhance the look of your website.
+**[Portfolio]** is a simple HTML, CSS and JavaScript project that teaches how to parse a Figma design to create a UI in both mobile and desktop version, use JavaScript events and use JavaScript to manipulate DOM elements. 
 
 ## 🛠 Built With  <a name="built-with"></a>
 
@@ -75,7 +74,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone[ (https://github.com/joyapisi/Hello-world.git)]
+  git clone[ (https://github.com/joyapisi/ThePortfolio.git)]
 ```
 ### Set Up Linters
 ## Define Linters
@@ -103,6 +102,11 @@ Also, there are many ways you can integrate a linter in your workflow:
 # .gitignore
 node_modules/
 
+## ESLint 
+Run 
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
 
 ## Web Hint 
 This is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
@@ -124,6 +128,7 @@ This is a customizable linting tool that helps you improve your site's accessibi
    ```
    npx hint .
    ```
+   [Copy contents of .eslintrc.json to the root directory of your project](https://github.com/microverseinc/linters-config/blob/master/html-css-js/.eslintrc.json)
 5. Fix validation errors.
 
 ### [Stylelint](https://stylelint.io/)
@@ -175,12 +180,16 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 
 ## 🤝 Contributing <a name="contributing"></a>
+ GitHub: (https://github.com/dave-prog)
+  GitHub: (https://github.com/Nelofarzabi)
+  GitHub: (https://github.com/ismayito)
+
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> No future features
 
 - [ ] **[new_feature_1]**
 This project will not have any additional features.
@@ -191,7 +200,7 @@ This project will not have any additional features.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/joyapisi/ThePortfolio/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -202,7 +211,7 @@ If you like this project, kindly leave a comment below and share it with someone
 
 ## 🙏 Acknowledgments <a name="Microverse Inc."></a>
 
-I'm thankful to Microverse for providing a study platform which guided me through this project and to my coding partner at Microverse for the collaborative effort. 
+I'm thankful to Microverse for providing a study platform which guided me through this project and to my coding partners at Microverse for the collaborative effort. 
 
 
 <!-- FAQ (optional) -->
