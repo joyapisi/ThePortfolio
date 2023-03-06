@@ -56,11 +56,6 @@ nav {
   backdrop-filter: blur(12px);
 }
 
-.navigationItem:visited {
-  color: white;
-  text-decoration: none;
-}
-
 .navigationItem {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -70,6 +65,11 @@ nav {
   display: flex;
   align-items: center;
   color: #fff;
+  text-decoration: none;
+}
+
+.navigationItem:visited {
+  color: white;
   text-decoration: none;
 }
 
@@ -109,12 +109,7 @@ nav {
 }
 
 #closeButton {
-  transform: translateY(-100%);
-}
-
-#closeButton.active {
   transform: translateY(0);
-  cursor: pointer;
   margin-top: 0;
   margin-right: 7%;
   padding: 5%;
@@ -127,6 +122,12 @@ nav {
   font-size: 34px;
   color: #fff;
   z-index: 10;
+}
+
+#closeButton.active {
+  transform: translateY(0);
+  cursor: pointer;
+
 }
 
 .mobilemain {
@@ -147,10 +148,8 @@ nav {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  position: absolute;
   width: 375px;
   height: 604px;
-  /* left: calc(50% - 375px / 2); */
   background-image:
 
     url("./sources/header-shapes\ mobile.png"),
@@ -296,7 +295,7 @@ a:hover {
   width: 375px;
   height: 2788px;
   right: 30%;
-  margin-top: 718px;
+  /* margin-top: 718px; */
 }
 
 .card1 {
@@ -690,11 +689,8 @@ h2 {
 
 .frame7 {
   display: flex;
-  flex-direction: row;
   width: 327px;
   height: 72px;
-
-  /* gap: 55%; */
 }
 
 #languages {
@@ -1046,7 +1042,6 @@ h2 {
 
   nav {
     display: flex;
-    flex-direction: row;
     margin-right: 10%;
     color: #344563;
   }
@@ -1083,7 +1078,7 @@ h2 {
     margin-right: 10%;
     width: 30%;
     color: #344563;
-    margin-top: 4%;
+    margin-top: 2.5%;
     position: unset;
   }
 
@@ -1105,15 +1100,13 @@ h2 {
     align-items: center;
     padding: 0;
     width: 100%;
-    height: 456px;
+    height: 566px;
     background-color: #fff;
     border-bottom-left-radius: 5rem;
     background-image: url("./sources/Header\ bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 25px;
+    background-size: cover;
     gap: 0;
-    margin-left: -26%;
   }
 
   .headline #heading {
@@ -1139,7 +1132,7 @@ h2 {
 
   .smedia {
     flex: none;
-    margin-right: 55%;
+    margin-right: 59%;
     margin-top: 3%;
   }
 
@@ -1162,7 +1155,7 @@ h2 {
     width: 100%;
     height: 2600px;
     padding-top: 0;
-    margin-top: 70%;
+    margin-top: 0;
   }
 
   .card1 {
@@ -1684,9 +1677,7 @@ h2 {
     align-items: flex-end;
     transition: none;
     margin-left: 32%;
-    padding-top: 0;
-    padding-right: 10%;
-    margin-top: 2.5%;
+    padding: 0 10% 0 0;
     width: 30%;
     color: #000;
     position: unset;
@@ -1719,7 +1710,7 @@ h2 {
     width: 100%;
     height: 14%;
     background-size: cover;
-    margin-left: -36%;
+    margin: 0;
   }
 
   .headline #heading {
@@ -1745,10 +1736,8 @@ h2 {
 
   .smedia {
     flex: none;
-    position: relative;
     float: left;
-    margin-top: 0;
-    margin-left: -2%;
+    padding-left: 1%;
   }
 
   #heading5 {
@@ -1768,8 +1757,8 @@ h2 {
   .works {
     width: 100%;
     height: 2800px;
-    margin-top: 70%;
     margin-left: 2.8%;
+    gap: 24px;
   }
 
   .card1 {
