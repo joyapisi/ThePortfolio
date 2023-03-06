@@ -127,7 +127,6 @@ nav {
 #closeButton.active {
   transform: translateY(0);
   cursor: pointer;
-
 }
 
 .mobilemain {
@@ -295,6 +294,7 @@ a:hover {
   width: 375px;
   height: 2788px;
   right: 30%;
+
   /* margin-top: 718px; */
 }
 
