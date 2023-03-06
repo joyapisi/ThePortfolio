@@ -15,17 +15,20 @@
     <nav title="navigation-bar">
       <a href="#about" class="logo">Joy</a>
   
-      <ul class="navigationList" title="navigation-list">
+      <ul onclick="menuPopup()" id="navigationList" title="navigation-list">
         <li><a class="navigationItem" href="#portfolio">Portfolio</a></li>
         <li><a class="navigationItem" href="#about">About</a></li>
         <li><a class="navigationItem" href="#contactme">Contact</a></li>
       </ul>
     
-      <div class="nav-button2">
+      <div onclick="menuPopup()" id="nav-button2">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
+
+      <div onclick="menuPopup()" id="closeButton"> &times; </div>
+
     </nav>
   </header>
 
@@ -258,5 +261,6 @@
   </fieldset>
 </div>
 </section>
+<script src="index.js"></script>
 </body>
 </html>

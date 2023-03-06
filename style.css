@@ -39,7 +39,7 @@ nav {
   background-color: transparent;
 }
 
-.navigationList {
+#navigationList {
   flex-direction: column;
   position: absolute;
   gap: 6%;
@@ -49,7 +49,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 4;
   list-style: none;
   padding-top: 4rem;
   mix-blend-mode: multiply;
@@ -65,9 +65,10 @@ nav {
   display: flex;
   align-items: center;
   color: #fff;
+  text-decoration: none;
 }
 
-.navigationList.active {
+#navigationList.active {
   display: flex;
   position: fixed;
   transform: translateY(0);
@@ -78,19 +79,19 @@ nav {
   width: 200vh;
 }
 
-.nav-button2 {
+#nav-button2 {
   display: block;
   width: 18px;
   height: 18px;
   background: #fff;
   top: 10px;
   right: 10%;
-  z-index: 5;
+  z-index: 3;
   position: absolute;
   cursor: pointer;
 }
 
-.nav-button2 .bar {
+#nav-button2 .bar {
   display: block;
   width: 100%;
   background: #6070ff;
@@ -98,24 +99,29 @@ nav {
   margin: 3px 0;
 }
 
-.nav-button2.active {
-  background: #6070ff;
-  position: fixed;
+#nav-button2.active {
+  display: none;
 }
 
-.nav-button2.active span:nth-child(2) {
-  opacity: 0;
+#closeButton {
+  transform: translateY(-100%);
 }
 
-.nav-button2.active span:nth-child(1) {
-  transform: translateY(2px) rotate(45deg);
-  background: rgb(255, 255, 255);
-  z-index: 7;
-}
-
-.nav-button2.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background: rgb(255, 255, 255);
+#closeButton.active {
+  transform: translateY(0);
+  cursor: pointer;
+  margin-top: 0;
+  margin-right: 7%;
+  padding: 5%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 34px;
+  color: #fff;
+  z-index: 10;
 }
 
 .mobilemain {
@@ -1038,7 +1044,7 @@ h2 {
     color: #344563;
   }
 
-  .navigationList .navigationItem {
+  #navigationList .navigationItem {
     display: block;
     text-decoration: none;
     color: #344563;
@@ -1062,18 +1068,19 @@ h2 {
     color: #344563;
   }
 
-  .navigationList {
+  #navigationList {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     transition: none;
     margin-right: 10%;
-    margin-top: 0;
     width: 30%;
     color: #344563;
+    margin-top: 4%;
+    position: unset;
   }
 
-  .nav-button2 {
+  #nav-button2 {
     display: none;
   }
 
@@ -1664,7 +1671,7 @@ h2 {
     color: #000;
   }
 
-  .navigationList {
+  #navigationList {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -1672,11 +1679,13 @@ h2 {
     margin-left: 32%;
     padding-top: 0;
     padding-right: 10%;
+    margin-top: 2.5%;
     width: 30%;
     color: #000;
+    position: unset;
   }
 
-  .navigationList .navigationItem {
+  #navigationList .navigationItem {
     color: #344563;
     background: transparent;
     font-size: 15px;
