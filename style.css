@@ -56,6 +56,11 @@ nav {
   backdrop-filter: blur(12px);
 }
 
+.navigationItem:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .navigationItem {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -145,7 +150,7 @@ nav {
   position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% - 375px / 2);
+  /* left: calc(50% - 375px / 2); */
   background-image:
 
     url("./sources/header-shapes\ mobile.png"),
