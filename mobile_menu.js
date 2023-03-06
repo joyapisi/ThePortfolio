@@ -13,4 +13,4 @@ function menuPopup() {
   }
   return true;
 }
-NavList.addEventListener('click', menuPopup);
+Hamburger.addEventListener('click', menuPopup);
