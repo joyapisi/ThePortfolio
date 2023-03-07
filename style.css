@@ -39,7 +39,7 @@ nav {
   background-color: transparent;
 }
 
-.navigationList {
+#navigationList {
   flex-direction: column;
   position: absolute;
   gap: 6%;
@@ -49,7 +49,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 4;
   list-style: none;
   padding-top: 4rem;
   mix-blend-mode: multiply;
@@ -65,9 +65,15 @@ nav {
   display: flex;
   align-items: center;
   color: #fff;
+  text-decoration: none;
 }
 
-.navigationList.active {
+.navigationItem:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#navigationList.active {
   display: flex;
   position: fixed;
   transform: translateY(0);
@@ -78,19 +84,19 @@ nav {
   width: 200vh;
 }
 
-.nav-button2 {
+#nav-button2 {
   display: block;
   width: 18px;
   height: 18px;
   background: #fff;
   top: 10px;
   right: 10%;
-  z-index: 5;
+  z-index: 3;
   position: absolute;
   cursor: pointer;
 }
 
-.nav-button2 .bar {
+#nav-button2 .bar {
   display: block;
   width: 100%;
   background: #6070ff;
@@ -98,24 +104,29 @@ nav {
   margin: 3px 0;
 }
 
-.nav-button2.active {
-  background: #6070ff;
-  position: fixed;
+#nav-button2.active {
+  display: none;
 }
 
-.nav-button2.active span:nth-child(2) {
-  opacity: 0;
+#closeButton {
+  transform: translateY(0);
+  margin-top: 0;
+  margin-right: 7%;
+  padding: 5%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 34px;
+  color: #fff;
+  z-index: 10;
 }
 
-.nav-button2.active span:nth-child(1) {
-  transform: translateY(2px) rotate(45deg);
-  background: rgb(255, 255, 255);
-  z-index: 7;
-}
-
-.nav-button2.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background: rgb(255, 255, 255);
+#closeButton.active {
+  transform: translateY(0);
+  cursor: pointer;
 }
 
 .mobilemain {
@@ -136,10 +147,8 @@ nav {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% - 375px / 2);
   background-image:
 
     url("./sources/header-shapes\ mobile.png"),
@@ -278,14 +287,15 @@ a:hover {
 
 .works {
   display: grid;
-  grid-column: 1fr 1fr 1fr 1fr;
+  grid-column: 1/ span 3;
   align-items: center;
   gap: 142px;
   padding: 114px 24px;
   width: 375px;
   height: 2788px;
   right: 30%;
-  margin-top: 718px;
+
+  /* margin-top: 718px; */
 }
 
 .card1 {
@@ -553,7 +563,7 @@ h2 {
 /* Page6 */
 .aboutme {
   display: grid;
-  grid-column: 1fr 1fr;
+  grid-column: 1/ span 1;
   align-items: center;
   margin-left: 0;
   padding: 114px 24px;
@@ -562,7 +572,7 @@ h2 {
   left: 0;
   height: 1126.15px;
   background-image: url("./sources/Base\ about\ my\ self.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .top {
@@ -679,11 +689,8 @@ h2 {
 
 .frame7 {
   display: flex;
-  flex-direction: row;
   width: 327px;
   height: 72px;
-
-  /* gap: 55%; */
 }
 
 #languages {
@@ -730,7 +737,7 @@ h2 {
   left: 12px;
   top: 12px;
   display: grid;
-  grid-row: 1fr/1fr;
+  grid-row: 1/ span 1;
   justify-content: space-between;
 }
 
@@ -764,7 +771,7 @@ h2 {
   background: #f7f7f9;
   border-radius: 8px;
   display: grid;
-  grid-row: 1fr/1fr;
+  grid-row: 1/ span 1;
 }
 
 .htmlimage {
@@ -796,7 +803,7 @@ h2 {
   width: 303px;
   height: 66.72px;
   display: grid;
-  grid-row: 1fr/1fr;
+  grid-row: 1/ span 1;
   background: #f7f7f9;
   border-radius: 8px;
 }
@@ -832,6 +839,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10%;
 }
 
 .frameworks {
@@ -914,6 +922,7 @@ h2 {
   left: 6%;
 }
 
+/* Page 7 */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -1033,12 +1042,11 @@ h2 {
 
   nav {
     display: flex;
-    flex-direction: row;
     margin-right: 10%;
     color: #344563;
   }
 
-  .navigationList .navigationItem {
+  #navigationList .navigationItem {
     display: block;
     text-decoration: none;
     color: #344563;
@@ -1062,18 +1070,19 @@ h2 {
     color: #344563;
   }
 
-  .navigationList {
+  #navigationList {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     transition: none;
     margin-right: 10%;
-    margin-top: 0;
     width: 30%;
     color: #344563;
+    margin-top: 2.5%;
+    position: unset;
   }
 
-  .nav-button2 {
+  #nav-button2 {
     display: none;
   }
 
@@ -1091,15 +1100,13 @@ h2 {
     align-items: center;
     padding: 0;
     width: 100%;
-    height: 456px;
+    height: 566px;
     background-color: #fff;
     border-bottom-left-radius: 5rem;
     background-image: url("./sources/Header\ bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 25px;
+    background-size: cover;
     gap: 0;
-    margin-left: -26%;
   }
 
   .headline #heading {
@@ -1125,7 +1132,7 @@ h2 {
 
   .smedia {
     flex: none;
-    margin-right: 55%;
+    margin-right: 59%;
     margin-top: 3%;
   }
 
@@ -1148,7 +1155,7 @@ h2 {
     width: 100%;
     height: 2600px;
     padding-top: 0;
-    margin-top: 70%;
+    margin-top: 0;
   }
 
   .card1 {
@@ -1634,6 +1641,316 @@ h2 {
     position: absolute;
     left: 40%;
   }
+
+  /* Mobile PopUp Pages */
+  .modal {
+    width: 90%;
+    height: 713px;
+
+    /* padding: 60px 16px 50px 16px; */
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    border-radius: 3rem;
+  }
+
+  #modalCard1 {
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 12;
+    left: 50%;
+    top: 50%;
+  }
+
+  #modalCard1.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #5423f7;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalCard1 .popupContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    width: 93%;
+    height: 700px;
+    padding: 16px;
+  }
+
+  .topcontainter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    gap: 75%;
+  }
+
+  .h2popup {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    font-size: 32px;
+    line-height: 44px;
+    margin-left: 0;
+    width: 90%;
+    height: 36px;
+    color: #172b4d;
+  }
+
+  .close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #67798e;
+    font-size: 30px;
+    width: 14px;
+    height: 14px;
+    padding: 4%;
+  }
+
+  .popupContainer .popuptonic {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    padding: 0;
+    width: 50%;
+    height: 36px;
+  }
+
+  .popuptonic .canopy {
+    width: 63px;
+    height: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .popuptonic .back {
+    width: 88px;
+    height: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .popuptonic .dot {
+    width: 8px;
+    height: 8px;
+    background: #c1c7d0;
+    border-radius: 50%;
+  }
+
+  .popuptonic .year {
+    width: 29px;
+    height: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .modal-avator {
+    width: 100%;
+    height: 220px;
+  }
+
+  .popupparagraph2 {
+    width: 100%;
+    height: 220px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    text-align: left;
+  }
+
+  /* .right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  } */
+
+  .techstackbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 0.8rem;
+    width: 306px;
+    height: 57px;
+  }
+
+  .popupresources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 203px;
+    height: 24px;
+    margin-top: 10px;
+  }
+
+  .popupbutton {
+    /* height: 24px;
+    background-color: hsl(240, 72%, 94%);
+    border: none; */
+    color: #212658;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px 12px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+
+    /* font-family: "Poppins", sans-serif;
+    font-style: normal; */
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  .popupaction {
+    margin-top: 60px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .seeLiveButton {
+    padding: 8px;
+    gap: 25px;
+    width: 36px;
+    height: 40px;
+    border: 1px solid hsl(234, 100%, 69%);
+    border-radius: 8px;
+    background: transparent;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .seeSourceButton {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 6px;
+    width: 46px;
+    height: 40px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 15px;
+    padding-left: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #modalCard2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 40%;
+    padding: 0 20px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 75%;
+    max-width: 75%;
+    height: 21%;
+  }
+
+  #modalCard2.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #modalCard3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 52.5%;
+    padding: 0 20px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 75%;
+    max-width: 75%;
+    height: 21%;
+  }
+
+  #modalCard3.active {
+    transform: translate(-50%, -50%) scale(1);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(12px);
+  }
+
+  #modalCard4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 64%;
+    padding: 0 20px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 75%;
+    max-width: 75%;
+    height: 21%;
+  }
+
+  #modalCard4.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1664,19 +1981,19 @@ h2 {
     color: #000;
   }
 
-  .navigationList {
+  #navigationList {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     transition: none;
     margin-left: 32%;
-    padding-top: 0;
-    padding-right: 10%;
+    padding: 0 10% 0 0;
     width: 30%;
     color: #000;
+    position: unset;
   }
 
-  .navigationList .navigationItem {
+  #navigationList .navigationItem {
     color: #344563;
     background: transparent;
     font-size: 15px;
@@ -1703,7 +2020,7 @@ h2 {
     width: 100%;
     height: 14%;
     background-size: cover;
-    margin-left: -36%;
+    margin: 0;
   }
 
   .headline #heading {
@@ -1729,10 +2046,8 @@ h2 {
 
   .smedia {
     flex: none;
-    position: relative;
     float: left;
-    margin-top: 0;
-    margin-left: -2%;
+    padding-left: 1%;
   }
 
   #heading5 {
@@ -1752,8 +2067,8 @@ h2 {
   .works {
     width: 100%;
     height: 2800px;
-    margin-top: 70%;
     margin-left: 2.8%;
+    gap: 24px;
   }
 
   .card1 {
@@ -1923,11 +2238,11 @@ h2 {
   }
 
   .aboutme {
-    grid-row: 1fr 1fr;
+    grid-row: 1/ span 1;
     width: 100%;
     height: 924px;
     background-image: url("./sources/about\ myself\ -\ background-\ shape-\ desktop.png");
-    background-repeat: none;
+    background-repeat: no-repeat;
     gap: 10px;
   }
 
