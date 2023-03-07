@@ -1030,6 +1030,321 @@ h2 {
   background: #6070ff;
 }
 
+/* Mobile PopUp Pages */
+.modal {
+  width: 90%;
+  height: 713px;
+  /* padding: 60px 16px 50px 16px; */
+ background-color: #fff; 
+  border: 1px solid #ebecf0;
+  border-radius: 3rem;
+}
+
+#modalCard1 {
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 12;
+  left: 50%;
+  top: 50%;
+}
+
+#modalCard1.active {
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+
+/* #overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5423f7;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} */
+
+#modalCard1 .popupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  width: 93%;
+  height: 700px; ??
+  padding: 16px;
+}
+
+.topcontainter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  gap: 75%;
+}
+
+.h2popup {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 0;
+  width: 90%;
+  height: 36px;
+  color: #172b4d;
+}
+
+.closeButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #67798e;
+  font-size: 30px;
+  width: 14px;
+  height: 14px;
+  padding: 4%;
+}
+
+#closeButton.active {
+  transform: translateY(-100%);
+  transition: transform 0.3s; 
+}
+
+.popupContainer .popuptonic {
+  display: flex;
+  padding: 0%;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+  padding: 0;
+  width: 50%;
+  height: 36px;
+}
+
+.popuptonic .canopy {
+  width: 63px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  text-decoration: none;
+}
+
+.popuptonic .back {
+  width: 88px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.popuptonic .dot {
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  border-radius: 50%;
+}
+
+.popuptonic .year {
+  width: 29px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.modal-avator {
+  width: 100%;
+  height: 220px;
+}
+
+.popupparagraph2 {
+  width: 100%;
+  height: 220px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  text-align: left;
+}
+
+/* .right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+} */
+
+.techstackbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 0.8rem;
+  width: 306px;
+  height: 57px;
+}
+
+.popupresources {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+  width: 203px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.popupbutton {
+  /* height: 24px;
+  background-color: hsl(240, 72%, 94%);
+  border: none; */
+  color: #212658;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 12px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  /* font-family: "Poppins", sans-serif;
+  font-style: normal; */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+.popupaction {
+  margin-top: 60px;
+  display: flex;
+  gap: 12px;
+}
+
+.seeLiveButton {
+  padding: 8px;
+  gap: 25px;
+  width: 36px;
+  height: 40px;
+  border: 1px solid hsl(234, 100%, 69%);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 15px;
+  align-items: center;
+  padding-left: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.seeSourceButton {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 6px;
+  width: 46px;
+  height: 40px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 15px;
+  padding-left: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#modalCard2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 40%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  width: 75%;
+  max-width: 75%;
+  height: 21%;
+}
+
+#modalCard2.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#modalCard3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 52.5%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  width: 75%;
+  max-width: 75%;
+  height: 21%;
+}
+
+#modalCard3.active {
+  transform: translate(-50%, -50%) scale(1);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(12px);
+}
+
+#modalCard4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 64%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  width: 75%;
+  max-width: 75%;
+  height: 21%;
+}
+
+#modalCard4.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 @media screen and (min-width: 768px) {
   .header {
     width: 100%;
@@ -1951,6 +2266,345 @@ h2 {
   #modalCard4.active {
     transform: translate(-50%, -50%) scale(1);
   }
+
+    /* Desktop PopUp Pages*/
+    .modal {
+      background: #fff;
+      border: 1px solid #ebecf0;
+      border-radius: 16px;
+      width: 80%;
+      height: 20%;
+    }
+  
+    .modal.active {
+  
+    }
+    
+    
+    #modalCard1 {
+      /* display: flex;
+      flex-direction: column; */
+      position: absolute;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      box-shadow: 0 48px 48px rgba(7, 9, 26, 0.08);
+      z-index: 12;
+      padding: 16px;
+    } 
+  
+    #modalCard1.active {
+      transform: translate(-50%, -50%) scale(1);
+      left: 50%;
+      top: 50%;
+  
+      /* left: 50%;
+      top: 50%; */
+    }
+    
+    #modalCard1 .popupContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+      width: 93%;
+      height: 18%;
+      /* margin-top: 0.8rem; */
+      padding: 16px;
+      /* background-color: #dd8484; */
+    }
+    
+    .topcontainter {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 75%;
+    }  
+  
+    #overlay {
+      position: fixed;
+      opacity: 0;
+      transition: 200ms ease-in-out;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #c1c7d0;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+  
+    #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    
+    .popupContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    /* .popupContainer {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      width: 98%;
+      margin-top: 0.8rem;
+    } */
+    
+    .h2popup {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-align: left;
+      margin-left: 0;
+      width: 90%;
+      height: 40px;
+    }
+    
+    .closeButton {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      color: #67798e;
+      font-size: 30px;
+      left: 25%;
+      right: 25%;
+      top: 25%;
+      bottom: 25%;
+    }
+    
+    #closeButton.active {
+      transform: translateY(-100%);
+      transition: transform 0.3s; 
+    }
+
+    .modal .popuptonic {
+      display: flex;
+      gap: 8px;
+      margin-top: 15px;
+      padding: 0;
+      align-items: center;
+      width: 28.5%;
+      height: 36px;
+      margin-top: 1.8rem;
+    }
+    
+    .popuptonic.canopy {
+      width: 63px;
+      height: 20px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: #344563;
+    }
+    
+    .popuptonic.back {
+      width: 101px;
+      height: 20px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: #7a869a;
+    }
+    
+    .popuptonic.dot {
+      margin-top: 5;
+      width: 8px;
+      height: 8px;
+      background: #c1c7d0;
+      border-radius: 50%;
+    }
+    
+    .popuptonic.year {
+      width: 32px;
+      height: 20px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: #7a869a;
+    }
+    
+    .modal-avator {
+      width: 100%;
+      height: 586px;
+      margin-top: 2.4rem;
+    }
+    
+    .modal-content {
+      display: grid;
+      grid-row: 1fr/1fr;
+      margin-top: 1.8rem;
+    }
+    
+    .popupparagraph2 {
+      width: 65%;
+      height: 382px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #344563;
+    }
+    
+    .techstackbuttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      gap: 0.8rem;
+      width: 306px;
+      height: 57px;
+    }
+    
+    .popupresources {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0;
+      gap: 8px;
+      width: 203px;
+      height: 24px;
+      margin-top: 10px;
+    }
+    
+    .popupbutton {
+      height: 24px;
+      background-color: hsl(240, 72%, 94%);
+      border: none;
+      color: #212658;
+      text-align: center;
+      text-decoration: none;
+      padding: 4px 12px;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 8px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+    }
+    
+    .popupaction {
+      margin-top: 60px;
+      display: flex;
+      gap: 12px;
+    }
+    
+    .seeLiveButton {
+      padding: 8px;
+      gap: 25px;
+      width: 150px;
+      height: 40px;
+      border: 1px solid hsl(234, 100%, 69%);
+      border-radius: 8px;
+      background: transparent;
+      font-size: 15px;
+      align-items: center;
+      padding-left: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+    }
+    
+    .seeSourceButton {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      gap: 6px;
+      width: 150px;
+      height: 40px;
+      border: 1px solid #6070ff;
+      border-radius: 8px;
+      background: transparent;
+      font-size: 15px;
+      padding-left: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+    }
+    
+    #modalCard2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 40%;
+      padding: 0 20px;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      z-index: 10;
+      background: #fff;
+      border: 1px solid #ebecf0;
+      box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+      border-radius: 16px;
+      width: 75%;
+      max-width: 75%;
+      height: 21%;
+    }
+    
+    #modalCard2.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+    #modalCard3 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 52.5%;
+      padding: 0 20px;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      z-index: 10;
+      background: #fff;
+      border: 1px solid #ebecf0;
+      box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+      border-radius: 16px;
+      width: 75%;
+      max-width: 75%;
+      height: 21%;
+    }
+    
+    #modalCard3.active {
+      transform: translate(-50%, -50%) scale(1);
+      mix-blend-mode: multiply;
+      backdrop-filter: blur(12px);
+    }
+    
+    #modalCard4 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 64%;
+      padding: 0 20px;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      z-index: 10;
+      background: #fff;
+      border: 1px solid #ebecf0;
+      box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+      border-radius: 16px;
+      width: 75%;
+      max-width: 75%;
+      height: 21%;
+    }
+    
+    #modalCard4.active {
+      transform: translate(-50%, -50%) scale(1);
+    } 
 }
 
 @media screen and (min-width: 1024px) {
