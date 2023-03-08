@@ -1040,7 +1040,7 @@ h2 {
   border-radius: 3rem;
 }
 
-#modalCard1 {
+#modalCards {
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   z-index: 12;
@@ -1048,7 +1048,7 @@ h2 {
   top: 50%;
 }
 
-#modalCard1.active {
+#modalCards.active {
   transform: translate(-50%, -50%) scale(1);
   
 }
@@ -1071,7 +1071,7 @@ h2 {
   pointer-events: all;
 } */
 
-#modalCard1 .popupContainer {
+#modalCards .popupContainer {
   display: flex;
   flex-direction: column;
   gap: 12px;

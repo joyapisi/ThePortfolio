@@ -79,7 +79,7 @@
           <li><a  class="button" href="#">CSS</a> </li>
           <li><a  class="button" href="#">javaScript</a></li>      
         </ul>
-        <button onclick="togglePopup1()" id="modalButton1" class="normalbutton seeproject">See Project</button>     
+        <button onclick="togglePopup()" id="modalButton1" class="normalbutton seeproject">See Project</button>     
       
       </div>
     </div>
@@ -106,7 +106,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup2()"  id="modalButton2" class="normalbutton2 seeproject">See Project</button>      </div>
+      <button onclick="togglePopup()"  id="modalButton2" class="normalbutton2 seeproject">See Project</button>      </div>
     </div>
 
     <!--page 4--> 
@@ -131,7 +131,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup3()"  id="modalButton3" class="normalbutton seeproject">See Project</button>      </div>
+      <button onclick="togglePopup()"  id="modalButton3" class="normalbutton seeproject">See Project</button>      </div>
     </div>
   
    <!-- page 5-->
@@ -156,7 +156,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup4()" id="modalButton4" class="normalbutton2 seeproject">See Project</button> 
+      <button onclick="togglePopup()" id="modalButton4" class="normalbutton2 seeproject">See Project</button> 
       </div>
     </div>
   </section>
@@ -263,21 +263,20 @@
 </section>
 
 <!-- popUp pages -->
-<section class="modal" id="modalCards" >
-  <div class="popupContainer">
-    <div class="topcontainter">
-    <button class="closeButton">&times;</button>
+<section onclick="togglePopup()" class="modal" id="modalCards" >
+  <div onclick="togglePopup()" class="popupContainer">
+    <div onclick="togglePopup()" class="topcontainter">
+    <button onclick="togglePopup()" class="closeButton">&times;</button>
     </div>
-    <div id="modalContainerItems"></div>
   </div>
 </section>
 
 
-<section onclick="togglePopup1()" class="modal" id="modalCard1">
+<!-- <section onclick="togglePopup()" class="modal" id="modalCard1">
   <div class="popupContainer">
     <div class="topcontainter">
       <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup1()" class="closeButton">&times;</button>
+      <button onclick="togglePopup()" class="closeButton">&times;</button>
     </div>
     <ul class="popuptonic">
       <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
@@ -318,11 +317,11 @@
   </div>
 </section>
 
-<section onclick="togglePopup2()" class="modal" id="modalCard2">
+<section onclick="togglePopup()" class="modal" id="modalCard2">
   <div class="popupContainer">
     <div class="topcontainter">
       <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup2()" class="closeButton">&times;</button>
+      <button onclick="togglePopup()" class="closeButton">&times;</button>
     </div>
     <ul class="popuptonic">
       <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
@@ -364,11 +363,11 @@
 </section>
 
 
-<section onclick="togglePopup3()" class="modal" id="modalCard3">
+<section onclick="togglePopup()" class="modal" id="modalCard3">
   <div class="popupContainer">
     <div class="topcontainter">
       <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup3()" class="closeButton">&times;</button>
+      <button onclick="togglePopup()" class="closeButton">&times;</button>
     </div>
     <ul class="popuptonic">
       <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
@@ -409,11 +408,11 @@
   </div>
 </section>
 
-<section onclick="togglePopup4()" class="modal" id="modalCard4">
+<section onclick="togglePopup()" class="modal" id="modalCard4">
   <div class="popupContainer">
     <div class="topcontainter">
       <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup4()" class="closeButton">&times;</button>
+      <button onclick="togglePopup()" class="closeButton">&times;</button>
     </div>
     <ul class="popuptonic">
       <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
@@ -453,7 +452,7 @@
       </div>
   </div>
 </section>
-<div id="overlay"></div>
+<div id="overlay"></div> -->
 
 <script src="mobile_menu.js"></script>
 <script src="modal.js"></script>
