@@ -5,11 +5,6 @@ const projectsDetails = [{
   featuredimage: './sources/Snapshoot-Portfolio.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: {
-    buttonText: 'See Live',
-    buttonImage: './sources/popupaction.png',
-    buttonLink: 'https://joyapisi.github.io/Quote-Generator/',
-  },
   liveDemoButton:'https://joyapisi.github.io/Quote-Generator/',
   sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 },
@@ -50,7 +45,8 @@ function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDeta
   <div class="popup">
     <div class="top-title">
       <h2 class="title">${title}</h2>
-      <button id="closed-popup-${id}" class="closed-popup"> <img src="./sources/closeButton.png" alt=""> </button>  
+      <button id="closed-popup-${id}" class="closed-popup"> 
+      <img src="./sources/closeButton.png" alt=""> </button>  
     </div>
   
     <ul class="job-title">
@@ -107,7 +103,7 @@ function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDeta
 let modalCard = '';
 
 projectsDetails.forEach((index) => {
-  const modalDetails = generateModal (
+  const modalDetails = generateModal(
     index.id,
     index.title,
     index.jobDetails,
