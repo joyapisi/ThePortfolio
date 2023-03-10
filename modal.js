@@ -128,7 +128,7 @@ projectsDetails.forEach((item) => {
   document.getElementById(`modalButton-${id}`).addEventListener('click', () => {
     document.getElementById(`popup-project-${id}`).classList.add('active');
   });
-//   document.getElementById(`closed-popup-${id}`).addEventListener('click', () => {
-//     document.getElementById(`popup-project-${id}`).classList.remove('active');
+  document.getElementById(`closed-popup-${id}`).addEventListener('click', () => {
+    document.getElementById(`popup-project-${id}`).classList.remove('active');
   });
 });
