@@ -39,9 +39,8 @@ const projectsDetails = [{
   sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 }];
 
-function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDetails, myTechStack, liveDemoButton, sourceLinkButton,) {
-  return `
-  <section class="popupwindow" id="popup-project-${id}">
+function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDetails, myTechStack, liveDemoButton, sourceLinkButton) {
+  return `<section class="popupwindow" id="popup-project-${id}">
   <div class="popup">
     <div class="top-title">
       <h2 class="title">${title}</h2>
@@ -98,7 +97,6 @@ function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDeta
 </section>
   `;
 }
-
 
 let modalCard = '';
 
