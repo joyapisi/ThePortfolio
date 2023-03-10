@@ -1,9 +1,7 @@
 const projectsDetails = [{
   id: 1,
   title: 'Tonic',
-  jobCompany: 'CANOPY',
-  jobTitle: 'BackEndDev',
-  jobYear: '2015',
+  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
   featuredimage: './sources/Snapshoot-Portfolio.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -12,58 +10,33 @@ const projectsDetails = [{
     buttonImage: './sources/popupaction.png',
     buttonLink: 'https://joyapisi.github.io/Quote-Generator/',
   },
-  sourceLinkButton: {
-    buttonText: 'See Source',
-    buttonImage: './sources/popupgithub.png',
-    buttonLink: 'https://github.com/joyapisi/Quote-Generator',
-  },
+  liveDemoButton:'https://joyapisi.github.io/Quote-Generator/',
+  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 },
 {
   id: 2,
   title: 'Multi-Post Stories',
-  jobCompany: 'CANOPY',
-  jobTitle: 'BackEndDev',
-  jobYear: '2015',
+  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
   featuredimage: 'sources/Portfolio2.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: {
-    buttonText: 'See Live',
-    buttonImage: './sources/popupaction.png',
-    buttonLink: 'https://joyapisi.github.io/Quote-Generator/',
-  },
-  sourceLinkButton: {
-    buttonText: 'See Source',
-    buttonImage: './sources/popupgithub.png',
-    buttonLink: 'https://github.com/joyapisi/Quote-Generator',
-  },
+  liveDemoButton:'https://joyapisi.github.io/Quote-Generator/',
+  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 },
 {
   id: 3,
   title: 'Facebook 360',
-  jobCompany: 'FACEBOOK',
-  jobTitle: 'FullStack',
-  jobYear: '2015',
+  jobDetails: ['FACEBOOK', 'FullStack', '2015'],
   featuredimage: 'sources/Portfolio3.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: {
-    buttonText: 'See Live',
-    buttonImage: './sources/popupaction.png',
-    buttonLink: 'https://joyapisi.github.io/Quote-Generator/',
-  },
-  sourceLinkButton: {
-    buttonText: 'See Source',
-    buttonImage: './sources/popupgithub.png',
-    buttonLink: 'https://github.com/joyapisi/Quote-Generator',
-  },
+  liveDemoButton:'https://joyapisi.github.io/Quote-Generator/',
+  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 },
 {
   id: 4,
   title: 'Uber Navigation',
-  jobCompany: 'Uber',
-  jobTitle: 'Uber Lead Developer',
-  jobYear: '2015',
+  jobDetails: ['Uber', 'Uber Lead Developer', '2015'],
   featuredimage: 'sources/Portfolio4.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -71,7 +44,7 @@ const projectsDetails = [{
   sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 }];
 
-function generateModal (id, title, jobCompany, jobTitle, jobYear, featuredimage, jobDescriptionDetails, myTechStack, liveDemoButton, sourceLinkButton,) {
+function generateModal (id, title, jobDetails, featuredimage, jobDescriptionDetails, myTechStack, liveDemoButton, sourceLinkButton,) {
   return `
   <section class="popupwindow" id="popup-project-${id}">
   <div class="popup">
@@ -81,13 +54,16 @@ function generateModal (id, title, jobCompany, jobTitle, jobYear, featuredimage,
     </div>
   
     <ul class="job-title">
-      <li class="canopy-title">${jobCompany}</li>
+      <li class="canopy-title">
+      ${jobDetails[0]}
+      </li>
       <li class="dot-icon">
         <img class="dot-icon-img" src="./sources/dot.png" alt="dot"/>
-        ${jobTitle}
+        ${jobDetails[1]}
       </li>
       <li class="year-2015">
-        <img class="year-tonic" src="./sources/dot.png" alt="year-tonic"/>${jobYear}
+        <img class="year-tonic" src="./sources/dot.png" alt="year-tonic"/>
+        ${jobDetails[2]}
       </li>
     </ul>
 
@@ -134,9 +110,7 @@ projectsDetails.forEach((index) => {
   const modalDetails = generateModal (
     index.id,
     index.title,
-    index.jobCompany,
-    index.jobTitle,
-    index.jobYear,
+    index.jobDetails,
     index.featuredimage,
     index.jobDescriptionDetails,
     index.myTechStack,

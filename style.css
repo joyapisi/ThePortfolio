@@ -1032,15 +1032,15 @@ h2 {
 
 /* Mobile PopUp Pages */
 .popupwindow {
+  display: none;
   background: #c1c7d0;
-  mix-blend-mode: multiply;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   height: auto;
-  width: 100%;
+  max-width: 100%;
   padding: 60px 16px 50px 16px;
-  z-index: 50;
+  backdrop-filter: blur(12px);
 }
 
 .popup {
@@ -1048,18 +1048,26 @@ h2 {
   flex-direction: column;
   background-color: #fff;
   position: relative;
-  padding: 18px 16px ;
+  padding: 18px 16px;
   border-radius: 0.5rem;
-  width: 85%;
   top: 0;
   left: 0;
   gap: 12px;
+  z-index: 100;
+  opacity: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+.active {
+  display: block;
+}
+
 .top-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1067,49 +1075,50 @@ h2 {
   color: #172b4d;
 }
 
-.closingpopup {
-  border: 2px solid #67798E;
+.closed-popup {
+  background-color: transparent;
+  padding: 5px;
+  border: none;
 }
 
 .job-title {
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .canopy-title {
-font-size: 13px;
-line-height: 16px;
-color: #344563;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
- .dot-icon {
 
- }
-
- .img-counter {
+.dot-icon-img {
   padding-right: 5px;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
- }
+  color: #7a869a;
+}
 
- .year-2015 {
-font-size: 13px;
-line-height: 16px;
-color: #7A869A;
+.year-2015 {
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .year-tonic {
   padding-right: 5px;
 }
 
-.modal-image{
+#modal-image {
   width: 100%;
+  height: auto;
 }
+
 .bottom-content {
   display: flex;
   flex-direction: column;
@@ -1118,13 +1127,12 @@ color: #7A869A;
 .popupparagraph2 {
   display: flex;
   align-items: flex-start;
-  line-height: 25px;
   font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .right-block {
@@ -1143,17 +1151,17 @@ color: #344563;
 
 .popupresources {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-width: 203px;
-height: 24px;
-
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 203px;
+  height: 24px;
+  margin-top: 12px;
 }
 
 .popupbutton {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1161,6 +1169,9 @@ height: 24px;
   letter-spacing: 0.03em;
   color: #6070ff;
   text-decoration: none;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
 
 .popupaction {
@@ -1180,7 +1191,7 @@ height: 24px;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #396DF2;
+  color: #396df2;
   background-color: transparent;
   padding: 12px 14px;
   width: 136px;
@@ -1202,7 +1213,7 @@ height: 24px;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #396DF2;
+  color: #396df2;
   background-color: transparent;
   padding: 12px 14px;
   width: 146px;
@@ -1827,6 +1838,44 @@ height: 24px;
     height: 48px;
     position: absolute;
     left: 40%;
+  }
+
+  /* PopUp Desktop */
+  .popupwindow {
+    max-width: 100%;
+  }
+
+  .popup {
+    margin: 30px 144px 0 144px;
+    height: 1163px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .job-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* .modal-image {
+    max-height: auto;
+  } */
+
+  .popupparagraph2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .bottom-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
   }
 }
 

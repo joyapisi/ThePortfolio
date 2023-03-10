@@ -80,7 +80,7 @@
           <li><a  class="button" href="#">CSS</a> </li>
           <li><a  class="button" href="#">javaScript</a></li>      
         </ul>
-        <button onclick="togglePopup()" id="modalButton1" class="normalbutton seeproject">See Project</button>     
+        <button id="modalButton-1" class="normalbutton seeproject">See Project</button>     
       
       </div>
     </div>
@@ -107,7 +107,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup()"  id="modalButton2" class="normalbutton2 seeproject">See Project</button>      </div>
+      <button id="modalButton-2" class="normalbutton2 seeproject">See Project</button>      </div>
     </div>
 
     <!--page 4--> 
@@ -132,7 +132,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup()"  id="modalButton3" class="normalbutton seeproject">See Project</button>      </div>
+      <button id="modalButton-3" class="normalbutton seeproject">See Project</button>      </div>
     </div>
   
    <!-- page 5-->
@@ -157,7 +157,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup()" id="modalButton4" class="normalbutton2 seeproject">See Project</button> 
+      <button id="modalButton-4" class="normalbutton2 seeproject">See Project</button> 
       </div>
     </div>
   </section>
@@ -264,272 +264,10 @@
 </section>
 
 <!-- Popup Windows Start -->
-<section class="popupwindow">
-<div class="popup">
-  <div class="top-title">
-    <h2 class="title">Tonic</h2>
-    <button class="closed-popup"> <img src="./sources/closeButton.png" alt=""> </button>  
-  </div>
-
-  <ul class="job-title">
-    <li class="canopy-title">CANOPY</li>
-    <li class="dot-icon">
-      <img
-        class="img-counter"
-        src="./sources/dot.png"
-        alt="dot"
-      />Back End Dev
-    </li>
-    <li class="year-2015">
-      <img
-        class="year-tonic"
-        src="./sources/dot.png"
-        alt="year-tonic"
-      />2015
-    </li>
-  </ul>
-
-<img class="modal-image" src="./sources/Snapshoot-Portfolio.png" alt="picture">
-   
-<div class="bottom-content">
-    <p class="popupparagraph2">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-    </p>
-
-    <div class="right-block">
-      <div class="techstackbuttons">
-        <ul class="popupresources" title="popup-resources">
-          <li><a  class="popupbutton" href="#">HTML</a><li>
-          <li><a  class="popupbutton" href="#">CSS</a></li>
-          <li><a  class="popupbutton" href="#">javaScript</a></li>           
-        </ul>
-      </div>   
-</div>
-
-<div class="popupaction">
-  <button class="popupseeLiveButton">
-    See Live
-    <img src="./sources/popupaction.png" alt="see image live" />
-  </button>
-  <button class="popupseeSourceButton " > 
-    See Source 
-    <img src="./sources/popupgithub.png" alt="github source" />
-  </button>
-
-</div>
+<section id="modal-popup">
+  <!-- to render popup -->
 </section>
 
-
-
-
-
-
-
-<!-- <section onclick="togglePopup()" class="modal1" id="modalCards">
-  <div class="popupContainer">
-    <div class="topcontainter">
-      <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup()" class="closeButton">&times;</button>
-    </div>
-    <div class="arrows">
-      <i onclick="togglePopup1()" id="previousButton" class="fa-duotone fa-chevron-left"></i>
-      <i onclick="togglePopup1()" id="nextButton" class="fa-duotone fa-chevron-right"></i>
-    </div>
-    <ul class="popuptonic">
-      <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic back">Back End Dev</li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic year">2015</li>
-    </ul>
-
-    <img class="modal-avator" src="./sources/Snapshoot-Portfolio.png" alt="picture">
-    
-    <div class="bottom-content">
-      <div>
-        <p class="popupparagraph2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-        </p>
-      </div>
-      <div class="right-block">
-        <div class="techstackbuttons">
-          <ul class="popupresources" title="popup-resources">
-            <li><a  class="popupbutton" href="#">HTML</a><li>
-            <li><a  class="popupbutton" href="#">CSS</a></li>
-            <li><a  class="popupbutton" href="#">javaScript</a></li>           
-          </ul>
-          <ul class="popupresources">
-            <li><a  class="popupbutton" href="#">Github</a><li>
-            <li><a  class="popupbutton" href="#">Ruby</a></li>
-            <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
-          </ul>
-        </div>
-        <div class="popupaction">
-          <button class="seeLiveButton">
-            See Live
-            <img src="./sources/popupaction.png" alt="see image live" />
-          </button>
-          <button class="seeSourceButton"> 
-            See Source
-            <img src="./sources/popupgithub.png" alt="github source" />
-          </button>
-        </div>
-      </div>
-  </div>
-</div>
-</section>
-
-<section onclick="togglePopup()" class="modal2" id="modalCards">
-  <div class="popupContainer">
-    <div class="topcontainter">
-      <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup()" class="closeButton">&times;</button>
-    </div>
-    <ul class="popuptonic">
-      <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic back">Back End Dev</li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic year">2015</li>
-    </ul>
-
-    <img class="modal-avator" src="./sources/Portfolio2.png" alt="picture">
-
-      <p class="popupparagraph2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-      </p>
-      
-      <div class="techstackbuttons">
-        <ul class="popupresources" title="popup-resources">
-          <li><a  class="popupbutton" href="#">HTML</a><li>
-          <li><a  class="popupbutton" href="#">CSS</a></li>
-          <li><a  class="popupbutton" href="#">javaScript</a></li>           
-        </ul>
-        <ul class="popupresources">
-          <li><a  class="popupbutton" href="#">Github</a><li>
-          <li><a  class="popupbutton" href="#">Ruby</a></li>
-          <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
-        </ul>
-      </div>
-      <div class="popupaction">
-        <button class="seeLiveButton">
-          See Live
-          <img src="./sources/popupaction.png" alt="see image live" />
-        </button>
-        <button class="seeSourceButton"> 
-          See Source
-          <img src="./sources/popupgithub.png" alt="github source" />
-        </button>
-      </div>
-  </div>
-</section>
-
-
-<section onclick="togglePopup()" class="modal3" id="modalCards">
-  <div class="popupContainer">
-    <div class="topcontainter">
-      <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup()" class="closeButton">&times;</button>
-    </div>
-    <ul class="popuptonic">
-      <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic back">Back End Dev</li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic year">2015</li>
-    </ul>
-
-    <img class="modal-avator" src="./sources/Portfolio3.png" alt="picture">
-
-      <p class="popupparagraph2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-      </p>
-      
-      <div class="techstackbuttons">
-        <ul class="popupresources" title="popup-resources">
-          <li><a  class="popupbutton" href="#">HTML</a><li>
-          <li><a  class="popupbutton" href="#">CSS</a></li>
-          <li><a  class="popupbutton" href="#">javaScript</a></li>           
-        </ul>
-        <ul class="popupresources">
-          <li><a  class="popupbutton" href="#">Github</a><li>
-          <li><a  class="popupbutton" href="#">Ruby</a></li>
-          <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
-        </ul>
-      </div>
-      <div class="popupaction">
-        <button class="seeLiveButton">
-          See Live
-          <img src="./sources/popupaction.png" alt="see image live" />
-        </button>
-        <button class="seeSourceButton"> 
-          See Source
-          <img src="./sources/popupgithub.png" alt="github source" />
-        </button>
-      </div>
-  </div>
-</section>
-
-<section onclick="togglePopup()" class="modal4" id="modalCards">
-  <div class="popupContainer">
-    <div class="topcontainter">
-      <h2 class="h2popup">Tonic</h2>
-      <button onclick="togglePopup()" class="closeButton">&times;</button>
-    </div>
-    <ul class="popuptonic">
-      <li><a class="popuptonic canopy" href="#">CANOPY</a></li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic back">Back End Dev</li>
-      <li class="popuptonic dot"></li>
-      <li class="popuptonic year">2015</li>
-    </ul>
-
-    <img class="modal-avator" src="./sources/Portfolio4.png" alt="picture">
-
-      <p class="popupparagraph2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-      </p>
-      
-      <div class="techstackbuttons">
-        <ul class="popupresources" title="popup-resources">
-          <li><a  class="popupbutton" href="#">HTML</a><li>
-          <li><a  class="popupbutton" href="#">CSS</a></li>
-          <li><a  class="popupbutton" href="#">javaScript</a></li>           
-        </ul>
-        <ul class="popupresources">
-          <li><a  class="popupbutton" href="#">Github</a><li>
-          <li><a  class="popupbutton" href="#">Ruby</a></li>
-          <li><a  class="popupbutton" href="#">Bootstrap</a></li> 
-        </ul>
-      </div>
-      <div class="popupaction">
-        <button class="seeLiveButton">
-          See Live
-          <img src="./sources/popupaction.png" alt="see image live" />
-        </button>
-        <button class="seeSourceButton"> 
-          See Source
-          <img src="./sources/popupgithub.png" alt="github source" />
-        </button>
-      </div>
-  </div>
-</section>  -->
-
-<!-- popUp pages
-<section onclick="togglePopup()" class="modal" id="modalCards" >
-  <div onclick="togglePopup()" class="popupContainer">
-    <div onclick="togglePopup()" class="topcontainter">
-      <button onclick="togglePopup()" class="closeButton">&times;</button>
-    </div>
-    <div class="bottom-content"></div>
-    <div class="right-block"></div>
-  </div>
-</section>
-
-<div id="overlay"></div>  -->
-
-
- 
 <script src="mobile_menu.js"></script>
 <script src="modal.js"></script>
 </body>
