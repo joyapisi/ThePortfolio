@@ -1,12 +1,10 @@
 const projectsDetails = [{
-  id: 'popupCard1',
+  id: 1,
+  title: 'Tonic',
+  jobCompany: 'CANOPY',
+  jobTitle: 'BackEndDev',
+  jobYear: '2015',
   featuredimage: './sources/Snapshoot-Portfolio.png',
-  title: 'Tonic',
-  jobDescription: {
-    jobCompany: 'CANOPY',
-    jobTitle: 'BackEndDev',
-    jobYear: '2015',
-  },
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
   liveDemoButton: {
@@ -21,14 +19,12 @@ const projectsDetails = [{
   },
 },
 {
-  id: 'popupCard2',
+  id: 2,
+  title: 'Multi-Post Stories',
+  jobCompany: 'CANOPY',
+  jobTitle: 'BackEndDev',
+  jobYear: '2015',
   featuredimage: 'sources/Portfolio2.png',
-  title: 'Tonic',
-  jobDescription: {
-    jobCompany: 'CANOPY',
-    jobTitle: 'BackEndDev',
-    jobYear: '2015',
-  },
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
   liveDemoButton: {
@@ -43,14 +39,12 @@ const projectsDetails = [{
   },
 },
 {
-  id: 'popupCard3',
+  id: 3,
+  title: 'Facebook 360',
+  jobCompany: 'FACEBOOK',
+  jobTitle: 'FullStack',
+  jobYear: '2015',
   featuredimage: 'sources/Portfolio3.png',
-  title: 'Tonic',
-  jobDescription: {
-    jobCompany: 'CANOPY',
-    jobTitle: 'BackEndDev',
-    jobYear: '2015',
-  },
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
   liveDemoButton: {
@@ -65,183 +59,102 @@ const projectsDetails = [{
   },
 },
 {
-  id: 'popupCard4',
+  id: 4,
+  title: 'Uber Navigation',
+  jobCompany: 'Uber',
+  jobTitle: 'Uber Lead Developer',
+  jobYear: '2015',
   featuredimage: 'sources/Portfolio4.png',
-  title: 'Tonic',
-  jobDescription: {
-    jobCompany: 'CANOPY',
-    jobTitle: 'BackEndDev',
-    jobYear: '2015',
-  },
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: {
-    buttonText: 'See Live',
-    buttonImage: './sources/popupaction.png',
-    buttonLink: 'https://joyapisi.github.io/Quote-Generator/',
-  },
-  sourceLinkButton: {
-    buttonText: 'See Source',
-    buttonImage: './sources/popupgithub.png',
-    buttonLink: 'https://github.com/joyapisi/Quote-Generator',
-  },
+  liveDemoButton:'https://joyapisi.github.io/Quote-Generator/',
+  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 }];
 
-// popup page: Call HTML elements that Implement Popup
-const modalCards = document.getElementById('modalCards');
-const popupContainer = document.getElementById('popupContainer');
-const closeButton = document.getElementsByClassName('closeButton');
-const topcontainter = document.getElementsByClassName('topcontainter');
+function generateModal (id, title, jobCompany, jobTitle, jobYear, featuredimage, jobDescriptionDetails, myTechStack, liveDemoButton, sourceLinkButton,) {
+  return `
+  <section class="popupwindow" id="popup-project-${id}">
+  <div class="popup">
+    <div class="top-title">
+      <h2 class="title">${title}</h2>
+      <button id="closed-popup-${id}" class="closed-popup"> <img src="./sources/closeButton.png" alt=""> </button>  
+    </div>
+  
+    <ul class="job-title">
+      <li class="canopy-title">${jobCompany}</li>
+      <li class="dot-icon">
+        <img class="dot-icon-img" src="./sources/dot.png" alt="dot"/>
+        ${jobTitle}
+      </li>
+      <li class="year-2015">
+        <img class="year-tonic" src="./sources/dot.png" alt="year-tonic"/>${jobYear}
+      </li>
+    </ul>
 
-// action when modalButtons are clicked
-function togglePopup() {
-  modalCards.classList.toggle('active');
-  popupContainer.classList.toggle('active');
-  closeButton.classList.toggle('active');
-  topcontainter.classList.toggle('active');
+  <img id="modal-image" src="${featuredimage}" alt="picture">
+
+
+   <div class="bottom-content">
+       <p class="popupparagraph2">${jobDescriptionDetails}</p>
+   
+       <div class="right-block">
+         <div class="techstackbuttons">
+           <ul class="popupresources" title="popup-resources">
+             <li><a  class="popupbutton" href="#">${myTechStack[0]}</a><li>
+             <li><a  class="popupbutton" href="#">${myTechStack[1]}</a></li>
+             <li><a  class="popupbutton" href="#">${myTechStack[2]}</a></li>           
+           </ul>
+         </div>
+         
+         <div class="popupaction">
+           <button class="popupseeLiveButton">
+             <a href="${liveDemoButton}"> 
+             See Live
+             <img src="./sources/popupaction.png" alt="see image live" />
+             </a> 
+             </button> 
+           <button class="popupseeSourceButton " > 
+           <a href="${sourceLinkButton}"> 
+           See Source 
+             <img src="./sources/popupgithub.png" alt="github source" />
+             </a>
+             </button>
+         </div>
+       </div>
+     </div>
+   </div>
+</section>
+  `;
 }
 
-const popupButtons = [
-  document.getElementById('modalButton1'),
-  document.getElementById('modalButton2'),
-  document.getElementById('modalButton3'),
-  document.getElementById('modalButton4'),
-];
 
-popupButtons.forEach((item) => {
-  modalCards.addEventListener('click', () => {
-    popupContainer.innerHTML = '';
+let modalCard = '';
 
-    // create contents of popup pages
+projectsDetails.forEach((index) => {
+  const modalDetails = generateModal (
+    index.id,
+    index.title,
+    index.jobCompany,
+    index.jobTitle,
+    index.jobYear,
+    index.featuredimage,
+    index.jobDescriptionDetails,
+    index.myTechStack,
+    index.liveDemoButton,
+    index.sourceLinkButton,
+  );
+  modalCard += modalDetails;
+});
 
-    const section = document.createElement('section');
-    section.id = 'modalCard1';
-    section.className = 'modal';
-    document.body.appendChild(section);
+// execute popup
+document.getElementById('modal-popup').innerHTML = modalCard;
 
-    const div1 = document.createElement('div');
-    div1.className = 'popupcontainter';
-    section.appendChild(div1);
-
-    const div2 = document.createElement('div');
-    div2.className = 'topcontainter';
-    div1.appendChild(div2);
-
-    const h2 = document.createElement('h2');
-    h2.className = 'h2popup';
-    // h2.textContent = projectsDetails.title;
-    h2.textContent = projectsDetails[item].title;
-    div2.appendChild(h2);
-
-    //  let closingButton = document.createElement('button');
-    //  closingButton.className = 'closeButton';
-    // //  closeButton.textContent = 'Tonic'; ?????
-    //  div2.appendChild(closingButton);
-
-    const ul = document.createElement('ul');
-    ul.className = 'popuptonic';
-    div1.appendChild(ul);
-
-    const li1 = document.createElement('li');
-    li1.className = 'popuptonic canopy';
-    li1.textContent = projectsDetails[item].jobDescription.jobCompany;
-    ul.appendChild(li1);
-
-    const li2 = document.createElement('li');
-    li2.className = 'popuptonic back';
-    li2.textContent = projectsDetails[item].jobDescription.jobTitle;
-    ul.appendChild(li2);
-
-    const li3 = document.createElement('li');
-    li3.className = 'popuptonic year';
-    li3.textContent = projectsDetails[item].jobDescription.jobYear;
-    ul.appendChild(li3);
-
-    const img = document.createElement('img');
-    img.src = projectsDetails[item].featuredImage;
-    //  image.appendChild(img);
-    div1.appendChild(img);
-
-    // const paragraph = document.createElement("p");
-    // paragraph.innerText = projectsDetails[item].jobDescriptionDetails;
-    // div1.appendChild(paragraph);
-    div1.innerHTML = projectsDetails[item].jobDescriptionDetails;
-
-    const div3 = document.createElement('div');
-    div3.className = 'techstackbuttons';
-    div1.appendChild(div3);
-
-    const ul2 = document.createElement('ul');
-    ul2.className = 'popupresources';
-    div1.appendChild(ul2);
-
-    // techstack list
-    // const techstack1 = document.createElement('li');
-    // techstack1.className = 'popupbutton';
-    // techstack1.textContent = projectsDetails[0].jobDescriptionDetails[0]
-    // ul2.appendChild(techstack1)
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[1]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[2]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[3]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[1]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[1]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[1]
-    // ul2.appendChild(techstack2);
-
-    // const techstack2 = document.createElement('li');
-    // techstack2.className = 'popupbutton';
-    // techstack2.textContent = projectsDetails[0].jobDescriptionDetails[1]
-    // ul2.appendChild(techstack2);
-
-    // end techstack list
-
-    const div4 = document.createElement('div');
-    div4.className = 'popupaction';
-    div1.appendChild(div4);
-
-    const button5 = document.createElement('button');
-    button5.className = 'seeLiveButton';
-    button5.textContent = projectsDetails[item].sourceLinkButton.buttonText;
-    button5.innerHTML = '<a href="https://github.com/joyapisi/Quote-Generator"> <img src="./sources/popupaction.png" alt="see image live" />';
-    div1.appendChild('button5');
-
-    const button6 = document.createElement('a');
-    button6.className = 'seeSourceButton';
-    button6.textContent = projectsDetails[item].sourceLinkButton.buttonText;
-    button6.innerHTML = '<a href="https://github.com/joyapisi/Quote-Generator"> <img src="./sources/popupaction.png" alt="see image live" />';
-    div1.appendChild('button6');
-    // document.getElementById("div1").appendChild(button6);
-
-    modalCards.style.display = 'block';
+projectsDetails.forEach((item) => {
+  const { id } = item;
+  document.getElementById(`modalButton-${id}`).addEventListener('click', () => {
+    document.getElementById(`popup-project-${id}`).classList.add('active');
+  });
+  document.getElementById(`closed-popup-${id}`).addEventListener('click', () => {
+    document.getElementById(`popup-project-${id}`).classList.remove('active');
   });
 });
-closeButton.addEventListener('click', togglePopup);
-
-// function togglePopup() {
-//   closeButton.addEventListener('click', () => {
-//   modalCards.style.display = 'none';
-//   modalContent.innerHTML = '';
-// })};
