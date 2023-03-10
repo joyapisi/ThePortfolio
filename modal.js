@@ -47,8 +47,8 @@ function generateModal(
   jobDescriptionDetails,
   myTechStack,
   liveDemoButton,
-  sourceLinkButton
-  ) {
+  sourceLinkButton,
+) {
   return `<section class="popupwindow" id="popup-project-${id}">
   <div class="popup">
     <div class="top-title">
