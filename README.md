@@ -12,7 +12,7 @@ Portfolio setup, Mobile First and DOM Manipulation
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
 - [👥 Authors](#authors)
-- [🔭 Future Features] (#future-features)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 -- [🙏 Acknowledgements](#acknowledgements)
