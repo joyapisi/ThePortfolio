@@ -994,6 +994,7 @@ h2 {
 
 #Feed_back {
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
   background-color: red;
 }
 
@@ -1040,7 +1041,10 @@ h2 {
   height: auto;
   max-width: 100%;
   padding: 60px 16px 50px 16px;
-  backdrop-filter: blur(12px);
+  mix-blend-mode: multiply;
+
+  /* backdrop-filter: blur (12px); */
+  z-index: 99;
 }
 
 .popup {
