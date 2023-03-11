@@ -238,14 +238,14 @@ li {
 /* Page2 */
 button:hover,
 button:focus {
-  background: #6070ff;
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
 button:visited {
-  background: #d7d7d7;
+  background-color: #d7d7d7;
   border-radius: 8px;
   color: #396df2;
 }
@@ -256,7 +256,7 @@ button:disabled {
 }
 
 button:active {
-  background: #2230d2;
+  background-color: #2230d2;
   border-radius: 8px;
   color: rgb(237, 235, 235);
 }
@@ -1108,8 +1108,6 @@ h2 {
 }
 
 #modal-image {
-  /* width: 100%;
-  height: auto; */
   object-fit: contain;
 }
 
@@ -1189,13 +1187,19 @@ h2 {
   background-color: transparent;
   padding: 12px 14px;
   width: 136px;
-  gap: 8px;
+  gap: 10px;
 }
 
-.popupseeLiveButton:hover {
-  background: #6070ff;
+.popupseeLiveButton a:focus,
+.popupseeLiveButton a:hover {
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  color: #fff;
+}
+
+.popupseeSourceButton .btnwrap:hover {
+  background-color: transparent;
   color: #fff;
 }
 
@@ -1212,11 +1216,29 @@ h2 {
   padding: 12px 14px;
   width: 146px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
-.popupseeSourceButton:hover {
-  background: #6070ff;
+.popupseeSourceButton a:visited {
+  background-color: #ebebff;
+  border: none;
+  color: #6070ff;
+}
+
+.popupseeSourceButton a:disabled {
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.popupseeSourceButton a:active {
+  background-color: #ebebff;
+  border: none;
+  color: #6070ff;
+}
+
+.popupseeSourceButton a:focus,
+.popupseeSourceButton a:hover {
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
@@ -1826,7 +1848,7 @@ h2 {
 
   .popup {
     margin: 30px 144px 0 144px;
-    height: 530px;
+    height: 470px;
   }
 
   .title {

@@ -5,8 +5,8 @@ const projectsDetails = [{
   featuredimage: './sources/Snapshoot-Portfolio.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
-  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
+  liveDemoButton: 'See Live',
+  sourceLinkButton: 'See Source',
 },
 {
   id: 2,
@@ -15,8 +15,8 @@ const projectsDetails = [{
   featuredimage: 'sources/Portfolio2.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
-  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
+  liveDemoButton: 'See Live',
+  sourceLinkButton: 'See Source',
 },
 {
   id: 3,
@@ -25,8 +25,8 @@ const projectsDetails = [{
   featuredimage: 'sources/Portfolio3.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
-  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
+  liveDemoButton: 'See Live',
+  sourceLinkButton: 'See Source',
 },
 {
   id: 4,
@@ -35,8 +35,8 @@ const projectsDetails = [{
   featuredimage: 'sources/Portfolio4.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
-  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
+  liveDemoButton: 'See Live',
+  sourceLinkButton: 'See Source',
 }];
 
 function generateModal(
@@ -88,17 +88,17 @@ function generateModal(
          
          <div class="popupaction">
            <button class="popupseeLiveButton">
-             <a href="${liveDemoButton}"> 
-             See Live
-             <img src="./sources/popupaction.png" alt="see image live" />
-             </a> 
-             </button> 
-           <button class="popupseeSourceButton " > 
-           <a href="${sourceLinkButton}"> 
-           See Source 
-             <img src="./sources/popupgithub.png" alt="github source" />
-             </a>
-             </button>
+             <div class="btnwrap"> 
+                 ${liveDemoButton}
+                 <img src="./sources/popupaction.png" alt="see image live" />
+             </div>
+            </button> 
+           <button class="popupseeSourceButton" > 
+              <div class="btnwrap">
+               ${sourceLinkButton} 
+               <img src="./sources/popupgithub.png" alt="github source" />
+              </div>
+          </button>
          </div>
        </div>
      </div>
@@ -125,13 +125,6 @@ projectsDetails.forEach((index) => {
 
 // execute popup
 document.getElementById('modal-popup').innerHTML = modalCard;
-
-// document.getElementById(`openpop-${id}`).addEventListener('click', () => {
-//   document.getElementById(`popup-project-${id}`).classList.add('visible');
-// });
-// // close event
-// document.getElementById(`close-${id}`).addEventListener('click', () => {
-//   document.getElementById(`popup-project-${id}`).classList.remove('visible');
 
 projectsDetails.forEach((item) => {
   const { id } = item;
