@@ -20,8 +20,8 @@ const projectsDetails = [{
 },
 {
   id: 3,
-  title: 'Facebook 360',
-  jobDetails: ['FACEBOOK', 'FullStack', '2015'],
+  title: 'Multi-Post Stories',
+  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
   featuredimage: 'sources/Portfolio3.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -30,8 +30,8 @@ const projectsDetails = [{
 },
 {
   id: 4,
-  title: 'Uber Navigation',
-  jobDetails: ['Uber', 'Uber Lead Developer', '2015'],
+  title: 'Tonic',
+  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
   featuredimage: 'sources/Portfolio4.png',
   jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -125,6 +125,14 @@ projectsDetails.forEach((index) => {
 
 // execute popup
 document.getElementById('modal-popup').innerHTML = modalCard;
+
+
+// document.getElementById(`openpop-${id}`).addEventListener('click', () => {
+//   document.getElementById(`popup-project-${id}`).classList.add('visible');
+// });
+// // close event
+// document.getElementById(`close-${id}`).addEventListener('click', () => {
+//   document.getElementById(`popup-project-${id}`).classList.remove('visible');
 
 projectsDetails.forEach((item) => {
   const { id } = item;

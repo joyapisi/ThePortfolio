@@ -1039,7 +1039,8 @@ h2 {
   z-index: 100;
   opacity: 1;
   overflow-y: scroll;
-  overflow-x: hidden;
+  
+  /* overflow-x: hidden; */
 }
 
 .active {
@@ -1064,6 +1065,10 @@ h2 {
   border: none;
 }
 
+.closed-popup:hover {
+  background-color: transparent;
+}
+
 .job-title {
   display: flex;
   align-items: center;
@@ -1078,6 +1083,12 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+}
+
+.dot-icon {
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .dot-icon-img {
@@ -1098,8 +1109,9 @@ h2 {
 }
 
 #modal-image {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  object-fit: contain;
 }
 
 .bottom-content {
@@ -1338,7 +1350,8 @@ h2 {
     margin-top: 0;
   }
 
-  .cards {
+  .cards
+   {
     width: 94%;
     height: 96%;
     display: flex;
