@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="modal.css"> -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
         <title>Portfolio</title>
 </head>
@@ -79,7 +80,7 @@
           <li><a  class="button" href="#">CSS</a> </li>
           <li><a  class="button" href="#">javaScript</a></li>      
         </ul>
-        <button onclick="togglePopup1()" class="normalbutton seeproject">See Project</button>     
+        <button id="modalButton-1" class="normalbutton seeproject">See Project</button>     
       
       </div>
     </div>
@@ -106,7 +107,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup2()"  class="normalbutton2 seeproject">See Project</button>      </div>
+      <button id="modalButton-2" class="normalbutton2 seeproject">See Project</button>      </div>
     </div>
 
     <!--page 4--> 
@@ -131,7 +132,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup3()"  class="normalbutton seeproject">See Project</button>      </div>
+      <button id="modalButton-3" class="normalbutton seeproject">See Project</button>      </div>
     </div>
   
    <!-- page 5-->
@@ -156,7 +157,7 @@
         <li><a  class="button" href="#">CSS</a> </li>
         <li><a  class="button" href="#">javaScript</a></li>      
       </ul>
-      <button onclick="togglePopup4()" class="normalbutton2 seeproject">See Project</button> 
+      <button id="modalButton-4" class="normalbutton2 seeproject">See Project</button> 
       </div>
     </div>
   </section>
@@ -261,7 +262,13 @@
   </fieldset>
 </div>
 </section>
+
+<!-- Popup Windows Start -->
+<section id="modal-popup"> <!-- this will render the popup --></section>
+
 <script src="mobile_menu.js"></script>
-<script src="mobile_menu.js"></script>
+<script src="modal.js"></script>
+<script src="form_validation.js"></script>
+<script src="local_storage.js"></script>
 </body>
 </html>
