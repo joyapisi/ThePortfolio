@@ -14,8 +14,8 @@ localData.forEach((input) => {
   });
 });
 const informationStored = JSON.parse(localStorage.getItem('information'));
-if (informationStored) {
-  localData.forEach((element) => {
-    element.value = informationStored[element.name];
-  });
-}
+//if (informationStored) {
+  //localData.forEach((element) => {
+    //element.value = informationStored[element.name];
+  //});
+//}
