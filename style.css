@@ -1039,7 +1039,7 @@ h2 {
   z-index: 100;
   opacity: 1;
   overflow-y: scroll;
-  
+
   /* overflow-x: hidden; */
 }
 
@@ -1350,13 +1350,13 @@ h2 {
     margin-top: 0;
   }
 
-  .cards
-   {
+  .cards {
     width: 94%;
-    height: 96%;
+    height: 75%;
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
+    gap: 42px;
   }
 
   #avator {
@@ -1464,15 +1464,6 @@ h2 {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-  }
-
-  .cards {
-    width: 94%;
-    height: 75%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-    gap: 42px;
   }
 
   .container2 {

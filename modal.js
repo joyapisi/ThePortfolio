@@ -126,7 +126,6 @@ projectsDetails.forEach((index) => {
 // execute popup
 document.getElementById('modal-popup').innerHTML = modalCard;
 
-
 // document.getElementById(`openpop-${id}`).addEventListener('click', () => {
 //   document.getElementById(`popup-project-${id}`).classList.add('visible');
 // });
