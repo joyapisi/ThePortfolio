@@ -12,6 +12,7 @@ Portfolio setup, Mobile First and DOM Manipulation
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 -- [🙏 Acknowledgements](#acknowledgements)
@@ -180,19 +181,21 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 
 ## 🤝 Contributing <a name="contributing"></a>
- GitHub: (https://github.com/dave-prog)
-  GitHub: (https://github.com/Nelofarzabi)
-  GitHub: (https://github.com/ismayito)
+ Dave: (https://github.com/dave-prog)
+  Nelofar: (https://github.com/Nelofarzabi)
+  Ismail Mayito: (https://github.com/ismayito)
 
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> No future features
-
-- [ ] **[new_feature_1]**
-This project will not have any additional features.
+- [ ] **[Feature_1]**
+Adding drop down for my tech stack in the about me section.
+- [ ] **[Feature_2]**
+Adding proper project titles
+- [ ] **[Feature_3]**
+Adding proper project details from former employment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
