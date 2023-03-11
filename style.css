@@ -1016,7 +1016,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  height: auto;
+  height: 1577px;
   max-width: 100%;
   padding: 60px 16px 50px 16px;
   z-index: 102;
@@ -1038,9 +1038,8 @@ h2 {
   gap: 12px;
   z-index: 100;
   opacity: 1;
+  height: 480px;
   overflow-y: scroll;
-
-  /* overflow-x: hidden; */
 }
 
 .active {
@@ -1827,7 +1826,7 @@ h2 {
 
   .popup {
     margin: 30px 144px 0 144px;
-    height: 1163px;
+    height: 530px;
   }
 
   .title {
