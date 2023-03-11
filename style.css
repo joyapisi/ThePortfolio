@@ -1033,16 +1033,18 @@ h2 {
 /* Mobile PopUp Pages */
 .popupwindow {
   display: none;
-  background: #c1c7d0;
   position: fixed;
   top: 0;
   left: 0;
   height: auto;
   max-width: 100%;
   padding: 60px 16px 50px 16px;
+  z-index: 102;
   backdrop-filter: blur(12px);
-  mix-blend-mode: multiply;
-  inset: 0;
+  box-shadow:
+    inset 60px 0 120px #c1c7d0,
+    inset -60px 0 120px  #c1c7d0;
+ 
 }
 
 .popup {
@@ -1059,7 +1061,6 @@ h2 {
   opacity: 1;
   overflow-y: scroll;
   overflow-x: hidden;
-  backdrop-filter: none;
 }
 
 .active {
