@@ -238,14 +238,14 @@ li {
 /* Page2 */
 button:hover,
 button:focus {
-  background: #6070ff;
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
 button:visited {
-  background: #d7d7d7;
+  background-color: #d7d7d7;
   border-radius: 8px;
   color: #396df2;
 }
@@ -256,7 +256,7 @@ button:disabled {
 }
 
 button:active {
-  background: #2230d2;
+  background-color: #2230d2;
   border-radius: 8px;
   color: rgb(237, 235, 235);
 }
@@ -289,31 +289,11 @@ a:hover {
   display: grid;
   grid-column: 1/ span 3;
   align-items: center;
-  gap: 142px;
+  gap: 5%;
   padding: 114px 24px;
   width: 375px;
-  height: 2788px;
+  height: 608px;
   right: 30%;
-
-  /* margin-top: 718px; */
-}
-
-.card1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 18px;
-  width: 327px;
-  height: 575px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  box-sizing: border-box;
-  border-radius: 16px;
-}
-
-#avator {
-  width: 100%;
 }
 
 .container,
@@ -524,7 +504,7 @@ h2 {
 }
 
 /* Page3 */
-.card2 {
+.cards {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -994,7 +974,6 @@ h2 {
 
 #Feed_back {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
   background-color: red;
 }
 
@@ -1034,17 +1013,17 @@ h2 {
 /* Mobile PopUp Pages */
 .popupwindow {
   display: none;
-  background: #c1c7d0;
   position: fixed;
   top: 0;
   left: 0;
-  height: auto;
+  height: 1577px;
   max-width: 100%;
   padding: 60px 16px 50px 16px;
-  mix-blend-mode: multiply;
-
-  /* backdrop-filter: blur (12px); */
-  z-index: 99;
+  z-index: 102;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    inset 60px 0 120px #c1c7d0,
+    inset -60px 0 120px  #ebebff;
 }
 
 .popup {
@@ -1059,8 +1038,8 @@ h2 {
   gap: 12px;
   z-index: 100;
   opacity: 1;
+  height: 480px;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .active {
@@ -1085,6 +1064,10 @@ h2 {
   border: none;
 }
 
+.closed-popup:hover {
+  background-color: transparent;
+}
+
 .job-title {
   display: flex;
   align-items: center;
@@ -1099,6 +1082,12 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+}
+
+.dot-icon {
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .dot-icon-img {
@@ -1119,8 +1108,7 @@ h2 {
 }
 
 #modal-image {
-  width: 100%;
-  height: auto;
+  object-fit: contain;
 }
 
 .bottom-content {
@@ -1199,14 +1187,27 @@ h2 {
   background-color: transparent;
   padding: 12px 14px;
   width: 136px;
-  gap: 8px;
+  gap: 10px;
 }
 
-.popupseeLiveButton:hover {
-  background: #6070ff;
+.popupseeLiveButton:hover img {
+  background-color: transparent;
+  color: #fff;
+  filter: brightness(500%);
+}
+
+.popupseeLiveButton a:focus,
+.popupseeLiveButton a:hover {
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
+}
+
+.popupseeSourceButton:hover img {
+  background-color: transparent;
+  color: #fff;
+  filter: brightness(500%);
 }
 
 .popupseeSourceButton {
@@ -1222,14 +1223,32 @@ h2 {
   padding: 12px 14px;
   width: 146px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
-.popupseeSourceButton:hover {
-  background: #6070ff;
+.popupseeSourceButton a:visited {
+  background-color: #ebebff;
+  border: none;
+  color: #6070ff;
+}
+
+.popupseeSourceButton a:disabled {
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.popupseeSourceButton a:active {
+  background-color: #ebebff;
+  border: none;
+  color: #6070ff;
+}
+
+.popupseeSourceButton a:focus,
+.popupseeSourceButton a:hover {
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
-  color: #fff;
+  color: #911717;
 }
 
 @media screen and (min-width: 768px) {
@@ -1355,17 +1374,17 @@ h2 {
 
   .works {
     width: 100%;
-    height: 2600px;
     padding-top: 0;
     margin-top: 0;
   }
 
-  .card1 {
+  .cards {
     width: 94%;
-    height: 66%;
+    height: 75%;
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
+    gap: 42px;
   }
 
   #avator {
@@ -1450,7 +1469,6 @@ h2 {
     gap: 8px;
     width: 203px;
     height: 24px;
-    margin-top: 10%;
   }
 
   .normalbutton {
@@ -1474,20 +1492,6 @@ h2 {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-  }
-
-  .card2 {
-    width: 94%;
-    height: 66%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-  }
-
-  .avator4 {
-    padding: 2%;
-    margin-right: -2%;
-    order: 2;
   }
 
   .container2 {
@@ -1851,7 +1855,7 @@ h2 {
 
   .popup {
     margin: 30px 144px 0 144px;
-    height: 1163px;
+    height: 470px;
   }
 
   .title {
@@ -1996,27 +2000,8 @@ h2 {
 
   .works {
     width: 100%;
-    height: 2800px;
     margin-left: 2.8%;
     gap: 24px;
-  }
-
-  .card1 {
-    width: 90%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    gap: 42px;
-  }
-
-  #avator {
-    width: 45%;
-    height: 95%;
-  }
-
-  .avator1 {
-    left: 24px;
-    top: 24px;
   }
 
   .container {
@@ -2124,22 +2109,7 @@ h2 {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-  }
-
-  .card2 {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 80%;
-    gap: 42px;
-  }
-
-  .avator4 {
-    order: 2;
-    top: 24px;
-    right: 24px;
-    padding: 0;
-    margin-right: 1%;
+    margin-top: 0;
   }
 
   .container2 {
