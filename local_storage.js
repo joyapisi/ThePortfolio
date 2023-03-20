@@ -7,10 +7,10 @@ const localStoreData = {
 
 localData.forEach((input) => {
   input.addEventListener('input', () => {
-    localStoreData[input.name] = input.value;
-    localStoreData[input.email] = input.value;
-    localStoreData[input.message] = input.value;
-    localStorage.setItem('information', JSON.stringify(localStoreData));
+  localStoreData[input.name] = input.value;
+  localStoreData[input.email] = input.value;
+  localStoreData[input.message] = input.value;
+  localStorage.setItem('information', JSON.stringify(localStoreData));
   });
 });
 const informationStored = JSON.parse(localStorage.getItem('information'));
