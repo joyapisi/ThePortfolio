@@ -4,6 +4,7 @@ const localStoreData = {
   email: '',
   message: '',
 };
+
 localData.forEach((input) => {
   input.addEventListener('input', () => {
     localStoreData[input.name] = input.value;
