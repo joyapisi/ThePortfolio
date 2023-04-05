@@ -1,42 +1,42 @@
 const projectsDetails = [{
   id: 1,
-  title: 'Tonic',
+  title: 'Infinite Photo-Scroll',
   jobDetails: ['CANOPY', 'BackEndDev', '2015'],
-  featuredimage: './sources/Snapshoot-Portfolio.png',
-  jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
+  featuredimage: 'sources/Project4.png',
+  jobDescriptionDetails: 'A web page that uses an API to display various photos from top to bottom infinitely',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'See Live',
-  sourceLinkButton: 'See Source',
+  liveDemoButton: 'https://joyapisi.github.io/Infinite-Photos-Scrolling/',
+  sourceLinkButton: 'https://github.com/joyapisi/Infinite-Photos-Scrolling',
 },
 {
   id: 2,
-  title: 'Multi-Post Stories',
+  title: 'Conference Website',
   jobDetails: ['CANOPY', 'BackEndDev', '2015'],
-  featuredimage: 'sources/Portfolio2.png',
-  jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
+  featuredimage: 'sources/Project2.png',
+  jobDescriptionDetails: 'Conference Website is a HTML, CSS and JavaScript project that uses a Behance web design to create a UI in both mobile and desktop version. It also uses JavaScript events and DOM elements to create pages dynamically. This project\'s content is personalized to a Teen Creators Conference that helps teenagers learn production using Adobe products.',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'See Live',
-  sourceLinkButton: 'See Source',
+  liveDemoButton: 'joyapisi.github.io/1st-Capstone-Project/',
+  sourceLinkButton: 'https://github.com/joyapisi/1st-Capstone-Project',
 },
 {
   id: 3,
-  title: 'Multi-Post Stories',
+  title: 'To Do List',
   jobDetails: ['CANOPY', 'BackEndDev', '2015'],
-  featuredimage: 'sources/Portfolio3.png',
-  jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
+  featuredimage: 'sources/Project3.png',
+  jobDescriptionDetails: 'A simple web page that displays a list of To Do tasks. User can add, edit or delete tasks. Tasks checked on the check box can be deleted using the Clear All button',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'See Live',
-  sourceLinkButton: 'See Source',
+  liveDemoButton: 'joyapisi.github.io/To-Do-List/',
+  sourceLinkButton: 'https://github.com/joyapisi/To-Do-List',
 },
 {
   id: 4,
-  title: 'Tonic',
+  title: 'Quote Generator',
   jobDetails: ['CANOPY', 'BackEndDev', '2015'],
-  featuredimage: 'sources/Portfolio4.png',
-  jobDescriptionDetails: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem',
+  featuredimage: 'sources/Project1.png',
+  jobDescriptionDetails: 'A web page that uses an API to generate different quotes',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'See Live',
-  sourceLinkButton: 'See Source',
+  liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
+  sourceLinkButton: 'https://github.com/joyapisi/Quote-Generator',
 }];
 
 function generateModal(
@@ -87,18 +87,24 @@ function generateModal(
          </div>
          
          <div class="popupaction">
-           <button class="popupseeLiveButton">
-             <div class="btnwrap"> 
-                 ${liveDemoButton}
-                 <img src="./sources/popupaction.png" alt="see image live" />
-             </div>
-            </button> 
-           <button class="popupseeSourceButton" > 
-              <div class="btnwrap">
-               ${sourceLinkButton} 
-               <img src="./sources/popupgithub.png" alt="github source" />
-              </div>
-          </button>
+            <a href = "${liveDemoButton}">
+              <button class="popupseeLiveButton">
+                <div class="btnwrap"> 
+                  See Live 
+                  <img src="./sources/popupaction.png" alt="see image live" />
+                </div>
+              </button>
+            </a> 
+            
+            <a href="${sourceLinkButton}">
+              <button class="popupseeSourceButton" >
+                <div class="btnwrap">
+                  See Source
+                  <img src="./sources/popupgithub.png" alt="github source" />
+                </div>
+              </button> 
+            </a>
+
          </div>
        </div>
      </div>
