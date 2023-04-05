@@ -135,7 +135,7 @@ nav {
   position: relative;
   width: 375px;
   height: 810px;
-  background-color: #ebebff;
+  background-color: #9797a1;
   right: 0;
   overflow-x: hidden;
   top: 0;
@@ -1174,6 +1174,10 @@ h2 {
   margin-top: 5%;
 }
 
+.popupaction a {
+  text-decoration: none;
+}
+
 .popupseeLiveButton {
   display: flex;
   border-radius: 8px;
@@ -1391,6 +1395,8 @@ h2 {
     width: 50%;
     height: 90%;
     margin-top: -2%;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
 
   .container {
