@@ -370,6 +370,14 @@ h2 {
   flex-grow: 0;
 }
 
+#avator {
+  width: 100%;
+  height: 50%;
+  margin-top: -2%;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 .paragraph2 {
   width: 295px;
   height: 76px;
