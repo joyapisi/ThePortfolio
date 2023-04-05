@@ -1,6 +1,6 @@
 const worksCards = [{
   id: 1,
-  image: 'sources/Project4.png',
+  image: 'sources/Project4.PNG',
   topic: 'Infinite Photo-Scroll',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
   jobDescription: 'A web page that uses an API to display various photos from top to bottom infinitely',
@@ -9,7 +9,7 @@ const worksCards = [{
 },
 {
   id: 2,
-  image: 'sources/Project2.png',
+  image: 'sources/Project2.PNG',
   topic: 'Conference Website',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
   jobDescription: 'A project that uses a Behance design for the UI and JavaScript to create pages dynamically.',
@@ -18,7 +18,7 @@ const worksCards = [{
 },
 {
   id: 3,
-  image: 'sources/Project3.png',
+  image: 'sources/Project3.PNG',
   topic: 'To Do List',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
   jobDescription: 'A simple web page that displays a list of To Do tasks. User can add, edit or delete tasks.',
@@ -27,7 +27,7 @@ const worksCards = [{
 },
 {
   id: 4,
-  image: 'sources/Project1.png',
+  image: 'sources/Project1.PNG',
   topic: 'Quote Generator',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
   jobDescription: 'A web page that uses an API to generate different quotes',
