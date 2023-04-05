@@ -1,6 +1,6 @@
 const worksCards = [{
   id: 1,
-  image: 'sources/Project4.PNG',
+  image: 'sources/Project4.png',
   topic: 'Infinite Photo-Scroll',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
   jobDescription: 'A web page that uses an API to display various photos from top to bottom infinitely',
