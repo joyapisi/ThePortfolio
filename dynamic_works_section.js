@@ -3,7 +3,7 @@ const worksCards = [{
   image: './sources/Project4.PNG',
   topic: 'Infinite Photo-Scroll',
   jobPosition: ['CANOPY', 'BackEndDev', '2015'],
-  jobDescription: 'A web page that uses an API to display various photos from top to bottom infinitely',
+  jobDescription: 'A web page that uses Unsplash API to display random photos from top to bottom infinitely',
   TechStack: ['HTML', 'CSS', 'Javascript'],
   seeProject: 'See Project',
 },
