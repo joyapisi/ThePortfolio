@@ -3,7 +3,7 @@ const projectsDetails = [{
   title: 'Infinite Photo-Scroll',
   jobDetails: ['CANOPY', 'BackEndDev', '2015'],
   featuredimage: './sources/Project4.PNG',
-  jobDescriptionDetails: 'A web page that uses an API to display various photos from top to bottom infinitely',
+  jobDescriptionDetails: 'A web page that uses Unsplash API to display various photos from top to bottom infinitely',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
   liveDemoButton: 'https://joyapisi.github.io/Infinite-Photos-Scrolling/',
   sourceLinkButton: 'https://github.com/joyapisi/Infinite-Photos-Scrolling',
