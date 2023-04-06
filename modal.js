@@ -15,7 +15,7 @@ const projectsDetails = [{
   featuredimage: './sources/Project2.PNG',
   jobDescriptionDetails: 'Conference Website is a HTML, CSS and JavaScript project that uses a Behance web design to create a UI in both mobile and desktop version. It also uses JavaScript events and DOM elements to create pages dynamically. This project\'s content is personalized to a Teen Creators Conference that helps teenagers learn production using Adobe products.',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'joyapisi.github.io/1st-Capstone-Project/',
+  liveDemoButton: 'https://joyapisi.github.io/1st-Capstone-Project/',
   sourceLinkButton: 'https://github.com/joyapisi/1st-Capstone-Project',
 },
 {
