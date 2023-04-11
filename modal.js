@@ -1,7 +1,7 @@
 const projectsDetails = [{
   id: 1,
   title: 'Infinite Photo-Scroll',
-  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
+  jobDetails: ['Zero to Mastery', 'FrontEndDev', '2022'],
   featuredimage: './sources/Project4.PNG',
   jobDescriptionDetails: 'A web page that uses Unsplash API to display various photos from top to bottom infinitely',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -11,7 +11,7 @@ const projectsDetails = [{
 {
   id: 2,
   title: 'Conference Website',
-  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
+  jobDetails: ['MICROVERSE', 'FrontEndDev', '2023'],
   featuredimage: './sources/Project2.PNG',
   jobDescriptionDetails: 'Conference Website is a HTML, CSS and JavaScript project that uses a Behance web design to create a UI in both mobile and desktop version. It also uses JavaScript events and DOM elements to create pages dynamically. This project\'s content is personalized to a Teen Creators Conference that helps teenagers learn production using Adobe products.',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
@@ -21,17 +21,17 @@ const projectsDetails = [{
 {
   id: 3,
   title: 'To Do List',
-  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
+  jobDetails: ['MICROVERSE', 'FrontEndDev', '2023'],
   featuredimage: './sources/Project3.PNG',
   jobDescriptionDetails: 'A simple web page that displays a list of To Do tasks. User can add, edit or delete tasks. Tasks checked on the check box can be deleted using the Clear All button',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'joyapisi.github.io/To-Do-List/',
+  liveDemoButton: 'joyapisi.github.io/To-Do-List/dist',
   sourceLinkButton: 'https://github.com/joyapisi/To-Do-List',
 },
 {
   id: 4,
   title: 'Quote Generator',
-  jobDetails: ['CANOPY', 'BackEndDev', '2015'],
+  jobDetails: ['Zero to Mastery', 'FrontEndDev', '2022'],
   featuredimage: './sources/Project1.PNG',
   jobDescriptionDetails: 'A web page that uses an API to generate different quotes',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
