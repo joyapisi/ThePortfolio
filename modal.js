@@ -25,7 +25,7 @@ const projectsDetails = [{
   featuredimage: './sources/Project3.PNG',
   jobDescriptionDetails: 'A simple web page that displays a list of To Do tasks. User can add, edit or delete tasks. Tasks checked on the check box can be deleted using the Clear All button',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'joyapisi.github.io/To-Do-List/dist',
+  liveDemoButton: 'https://joyapisi.github.io/To-Do-List/dist/',
   sourceLinkButton: 'https://github.com/joyapisi/To-Do-List',
 },
 {
