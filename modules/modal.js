@@ -1,38 +1,38 @@
 const projectsDetails = [{
   id: 1,
-  title: 'Infinite Photo-Scroll',
-  jobDetails: ['Zero to Mastery', 'FrontEndDev', '2022'],
-  featuredimage: './sources/Project4.PNG',
-  jobDescriptionDetails: 'A web page that uses Unsplash API to display various photos from top to bottom infinitely',
-  myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/Infinite-Photos-Scrolling/',
-  sourceLinkButton: 'https://github.com/joyapisi/Infinite-Photos-Scrolling',
+  title: 'Space Travellers Hub',
+  jobDetails: ['SELF-EMPLOYED', 'FrontEndDev', '2023'],
+  featuredimage: './images/Project1.PNG',
+  jobDescriptionDetails: 'A web application for a company that provides commercial and scientific space travel services. Users can book rockets and join selected space missions.',
+  myTechStack: ['ReactJS', 'Redux', 'Javascript', 'HTML', 'CSS', 'Github'],
+  liveDemoButton: 'https://my-space-travellers-hub.netlify.app/',
+  sourceLinkButton: 'https://github.com/joyapisi/space-traveler-hub.git',
 },
 {
   id: 2,
-  title: 'Conference Website',
-  jobDetails: ['MICROVERSE', 'FrontEndDev', '2023'],
-  featuredimage: './sources/Project2.PNG',
-  jobDescriptionDetails: 'Conference Website is a HTML, CSS and JavaScript project that uses a Behance web design to create a UI in both mobile and desktop version. It also uses JavaScript events and DOM elements to create pages dynamically. This project\'s content is personalized to a Teen Creators Conference that helps teenagers learn production using Adobe products.',
-  myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/1st-Capstone-Project/',
-  sourceLinkButton: 'https://github.com/joyapisi/1st-Capstone-Project',
+  title: 'Bookstore App',
+  jobDetails: ['SELF-EMPLOYED', 'FrontEndDev', '2023'],
+  featuredimage: './images/Project2.PNG',
+  jobDescriptionDetails: 'Bookstore App is a web app for all fans of books. It is a Single Page App (SPA) that allows users to add remove & display books in/from a list',
+  myTechStack: ['ReactJS', 'Redux', 'Javascript', 'HTML', 'CSS', 'Github'],
+  liveDemoButton: 'https://joys-bookstore-app.netlify.app/',
+  sourceLinkButton: 'https://github.com/joyapisi/bookstore-app.git',
 },
 {
   id: 3,
-  title: 'To Do List',
-  jobDetails: ['MICROVERSE', 'FrontEndDev', '2023'],
-  featuredimage: './sources/Project3.PNG',
-  jobDescriptionDetails: 'A simple web page that displays a list of To Do tasks. User can add, edit or delete tasks. Tasks checked on the check box can be deleted using the Clear All button',
-  myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
-  liveDemoButton: 'https://joyapisi.github.io/To-Do-List/dist/',
-  sourceLinkButton: 'https://github.com/joyapisi/To-Do-List',
+  title: 'Artwork App',
+  jobDetails: ['SELF-EMPLOYED', 'FrontEndDev', '2023'],
+  featuredimage: './images/Project3.PNG',
+  jobDescriptionDetails: 'A mobile app that can be used to find details of various artwork displayed on the home page. All data is fetched from the Art Institute of Chicago API.',
+  myTechStack: ['ReactJS', 'Redux', 'Javascript', 'HTML', 'CSS', 'Github'],
+  liveDemoButton: 'https://joys-artwork-app.netlify.app/',
+  sourceLinkButton: 'https://github.com/joyapisi/artwork-app.git',
 },
 {
   id: 4,
   title: 'Quote Generator',
   jobDetails: ['Zero to Mastery', 'FrontEndDev', '2022'],
-  featuredimage: './sources/Project1.PNG',
+  featuredimage: './images/Project4.PNG',
   jobDescriptionDetails: 'A web page that uses an API to generate different quotes',
   myTechStack: ['Javascript', 'HTML', 'CSS', 'Github', 'Ruby', 'Bootstrap'],
   liveDemoButton: 'https://joyapisi.github.io/Quote-Generator/',
@@ -54,7 +54,7 @@ function generateModal(
     <div class="top-title">
       <h2 class="title">${title}</h2>
       <button id="closed-popup-${id}" class="closed-popup"> 
-      <img src="./sources/closeButton.png" alt=""> </button>  
+      <img src="./images/closeButton.png" alt=""> </button>  
     </div>
   
     <ul class="job-title">
@@ -62,11 +62,11 @@ function generateModal(
       ${jobDetails[0]}
       </li>
       <li class="dot-icon">
-        <img class="dot-icon-img" src="./sources/dot.png" alt="dot"/>
+        <img class="dot-icon-img" src="./images/dot.png" alt="dot"/>
         ${jobDetails[1]}
       </li>
       <li class="year-2015">
-        <img class="year-tonic" src="./sources/dot.png" alt="year-tonic"/>
+        <img class="year-tonic" src="./images/dot.png" alt="year-tonic"/>
         ${jobDetails[2]}
       </li>
     </ul>
@@ -91,7 +91,7 @@ function generateModal(
               <button class="popupseeLiveButton">
                 <div class="btnwrap"> 
                   See Live 
-                  <img src="./sources/popupaction.png" alt="see image live" />
+                  <img src="./images/popupaction.png" alt="see image live" />
                 </div>
               </button>
             </a> 
@@ -100,7 +100,7 @@ function generateModal(
               <button class="popupseeSourceButton" >
                 <div class="btnwrap">
                   See Source
-                  <img src="./sources/popupgithub.png" alt="github source" />
+                  <img src="./images/popupgithub.png" alt="github source" />
                 </div>
               </button> 
             </a>
