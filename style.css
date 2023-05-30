@@ -1026,7 +1026,7 @@ h2 {
   left: 0;
   height: 1577px;
   max-width: 100%;
-  padding: 60px 16px 50px 16px;
+  padding: 60px 16px;
   z-index: 102;
   backdrop-filter: blur(12px);
   box-shadow:
@@ -1048,6 +1048,8 @@ h2 {
   opacity: 1;
   height: 480px;
   overflow-y: scroll;
+  width: 83%;
+  justify-self: center;
 }
 
 .active {
