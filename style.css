@@ -802,7 +802,7 @@ h2 {
   }
 
   .skillslist #heading {
-    width: 600px;
+    margin-left: -43%;
   }
 }
 /* Page 7 */
@@ -1698,12 +1698,17 @@ h2 {
   }
 
   .second {
-    width: 890px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 15%;
   }
   
   #second5 {
-    width: 890px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 15%;
   }
+
   #paragraph1 {
     width: 70%;
     height: 98px;
