@@ -802,7 +802,7 @@ h2 {
   }
 
   .skillslist #heading {
-    margin-left: -30%;
+    margin-left: -50%;
   }
 }
 /* Page 7 */
@@ -1721,7 +1721,7 @@ h2 {
   .smedia {
     flex: none;
     float: left;
-    padding-left: 3%;
+    padding-left: -1%;
   }
 
   #heading5 {
