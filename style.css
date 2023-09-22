@@ -223,7 +223,7 @@ h1 {
 }
 
 .smedia {
-  margin-left: 1%;
+  margin-left: 2%;
   margin-top: 30%;
 }
 
@@ -802,7 +802,7 @@ h2 {
   }
 
   .skillslist #heading {
-    margin-left: -43%;
+    margin-left: -30%;
   }
 }
 /* Page 7 */
@@ -1262,8 +1262,8 @@ h2 {
 
   .smedia {
     flex: none;
-    margin-right: 59%;
-    margin-top: 3%;
+    margin-right: 58%;
+    margin-top: 6%;
   }
 
   .LetsConnect {
@@ -1721,7 +1721,7 @@ h2 {
   .smedia {
     flex: none;
     float: left;
-    padding-left: 1%;
+    padding-left: 3%;
   }
 
   #heading5 {
