@@ -1661,12 +1661,12 @@ h2 {
     flex-direction: row;
     align-items: flex-end;
     transition: none;
-    margin-left: 42%;
+    /* margin-left: 42%; */
     padding: 0 10% 0 0;
-    width: 30%;
+    width: 100px;
     color: #000;
-    display: contents;
-    position: unset;
+    /* display: contents; */
+    /* position: unset; */
   }
 
   #navigationList .navigationItem {
@@ -1677,8 +1677,8 @@ h2 {
     line-height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
   }
 
   .mobilemain {
