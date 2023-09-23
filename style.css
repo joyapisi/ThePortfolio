@@ -1156,12 +1156,7 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .card {
-    width: 50px;
-    height: 50px;
-  }
-
-  .header {
+   .header {
     width: 100%;
     padding-top: 5%;
   }
@@ -1177,7 +1172,7 @@ h2 {
     position: fixed;
     padding-top: 30px;
     z-index: 200;
-    height: 65px;
+    height: 60px;
   }
 
   #navigationList .navigationItem {
@@ -1218,6 +1213,10 @@ h2 {
 
   #nav-button2 {
     display: none;
+  }
+
+  #closeButton {
+    padding: 0;
   }
 
   /* Page1 */
@@ -1510,6 +1509,11 @@ h2 {
     margin-top: 35%;
   }
 
+  .card {
+    width: 50px;
+    height: 50px;
+  }
+
   /* Last Page  */
   .contact-form {
     background-color: #6070ff;
@@ -1629,7 +1633,11 @@ h2 {
   }
 
   .logo {
-    padding-left: 55px;
+    top: 0;
+  }
+
+  #closeButton {
+    display: none;
   }
 
   nav {
@@ -1689,6 +1697,7 @@ h2 {
     height: 14%;
     background-size: cover;
     margin: 0;
+    padding-top: 10px;
   }
 
   .headline #heading {
