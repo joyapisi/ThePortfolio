@@ -1666,7 +1666,6 @@ h2 {
     padding: 0 10% 0 0;
     width: 100px;
     color: #000;
-    margin: 0;
     /* display: contents; */
     /* position: unset; */
   }
@@ -1738,7 +1737,7 @@ h2 {
   .smedia {
     flex: none;
     float: left;
-    padding-left: -5%;
+    padding-left: -4%;
   }
 
   #heading5 {
