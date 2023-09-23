@@ -1677,8 +1677,8 @@ h2 {
     line-height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    /* align-items: center; */
-    /* text-align: center; */
+    align-items: center;
+    text-align: center;
   }
 
   .mobilemain {
