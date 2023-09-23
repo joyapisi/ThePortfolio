@@ -1174,6 +1174,10 @@ h2 {
     display: flex;
     margin-right: 10%;
     color: #344563;
+    position: fixed;
+    padding-top: 30px;
+    z-index: 200;
+    height: 65px;
   }
 
   #navigationList .navigationItem {
@@ -1186,7 +1190,7 @@ h2 {
     line-height: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
   }
 
@@ -1208,7 +1212,7 @@ h2 {
     margin-right: 10%;
     width: 30%;
     color: #344563;
-    margin-top: 2.5%;
+    margin-top: 3.5%;
     position: unset;
   }
 
@@ -1631,6 +1635,7 @@ h2 {
   nav {
     display: flex;
     flex-direction: row;
+    position: fixed;
   }
 
   nav ul li a {
@@ -1652,6 +1657,7 @@ h2 {
     padding: 0 10% 0 0;
     width: 30%;
     color: #000;
+    display: contents;
     position: unset;
   }
 
