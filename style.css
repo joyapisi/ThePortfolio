@@ -1662,9 +1662,11 @@ h2 {
     align-items: flex-end;
     transition: none;
     /* margin-left: 42%; */
+    margin-top: 34px;
     padding: 0 10% 0 0;
     width: 100px;
     color: #000;
+    margin: 0;
     /* display: contents; */
     /* position: unset; */
   }
